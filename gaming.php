@@ -70,7 +70,7 @@
     </nav> 
     
     <!-- Navigation menu -->
-
+    <!-- Slide show menu -->
     <div class="container">
         <div class="row">
             <div class="box">
@@ -121,22 +121,52 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="box">
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                   <names>Ben Kibabu</names><br /><br /><img border="0" src="clubsandsocsreps/gaming/gamingrep1.jpg" height="350"></img>
+        <!-- Slide show menu -->
+        
+        <!-- Heading Row -->
+            <div class="row">
+                <div class="box">
+                    <div class="col-md-8">
+                        <img class="img-responsive img-rounded" src="http://placehold.it/900x500" alt="">
+                    </div>
+                    <div class="col-md-4">
+                        <h1>Gaming Society</h1>
+                        <p>Welcome to the NCI Gaming Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
+
+                            Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
+                            
+                            If you post any form of spam on this page I will unleash my angry ban hammer and it upsets our team greatly. </p>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                   <names>Cillian John Murray</names><br /><br /><img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"> </img>
+            </div>
+        <!-- Heading Row -->
+        
+        <!-- Content Row -->
+            <div class="row">
+                <div class="box">
+                    <div class="col-md-4">
+                        <names>Josephine Andrews</names><br /><br />
+                        <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
+                        <br /><br />
+                        <p><strong>Co-President:</strong> Josephine Andrews</p>
+                    </div>
+                    <div class="col-md-4">
+                        <names>Cillian John Murray</names><br /><br />
+                        <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
+                        <br /><br />
+                        <p><strong>Vice President:</strong> Cillian John Murray</p>
+                    </div>
+                    <div class="col-md-4">
+                        <names>Ben Kibabu</names><br /><br />
+                        <img border="0" src="clubsandsocsreps/gaming/gamingrep1.jpg" height="350"></img>
+                        <br /><br />
+                        <p><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</p>
+                    </div>
                 </div>
-                <div class="col-sm-4 col-lg-4 col-md-4">
-                   <names>Josephine Andrews</names><br /><br /><img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"> </img>
-                </div>
-                <div class="caption">
-                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                </div>
-	        </div>
-    	</div>
+            </div>
+        
+        <!-- Content Row -->
+        
     	<div class="row">
             <div class="box">
                 <form>
@@ -147,15 +177,21 @@
                     <div class="form-group">
                         <label for="Email">Email</label>
                         <input type="email" class="form-control" id="passwordform" placeholder="Please enter your student email">
-                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                     </div>
                     <div class="form-group">
-                        <label for="Date">Date</label>
+                      <label for="phone" class="from-control">Phone Number</label>
+                        <input class="form-control" type="tel" value="08" id="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="Date">Date of Birth</label>
                         <input class="form-control" type="date" value="" id="dateform">
                     </div>
                     <div class="form-group">
                         <label for="Questions/Comments">Questions/Comments</label>
                         <textarea class="form-control" id="questions/comments" rows="4"></textarea>
+                        
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+                        
                     </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                         <button type="submit" class="btn btn-primary">Clear</button>
