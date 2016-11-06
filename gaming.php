@@ -76,41 +76,30 @@
             <div class="box">
                 <div class="col-lg-12 text-center">
                     <div id="carousel-example-generic" class="carousel slide">
-                        <!-- Indicators -->
-                        
-                        
-                        
+                    	<!-- Indicators -->
+
                         <ol class="carousel-indicators hidden-xs">
                             <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="5"></li>
                         </ol>
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
-                            
+
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/newStarter1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingslide1.jpg" alt="" height="500px">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/dinnerslide1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingslide2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Sdessert1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingslide3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/newStarter2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingslide4.jpg" alt="">
                             </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/dinnerslide2.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img class="img-responsive img-full" src="img/Sdessert2.jpg" alt="">
-                            </div>
-                            
                         </div>
 
                         <!-- Controls -->
@@ -125,14 +114,13 @@
                     <h2 class="brand-before">
                         <small>Welcome to</small>
                     </h2>
-                    
+
                     <h1 class="brand-name">Gaming</h1>
                     <hr class="tagline-divider">
-                   
+
                 </div>
             </div>
         </div>
-
         <div class="row">
             <div class="box">
                 <div class="col-sm-4 col-lg-4 col-md-4">
@@ -144,23 +132,35 @@
                 <div class="col-sm-4 col-lg-4 col-md-4">
                    <names>Josephine Andrews</names><br /><br /><img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"> </img>
                 </div>
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h4><a href="#">Second Product</a>
-                        </h4>
-                        <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                    </div>
-                    <div class="ratings">                              
-                        <p>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star"></span>
-                            <span class="glyphicon glyphicon-star-empty"></span>
-                        </p>
-                    </div>
+                <div class="caption">
+                    <p>This is a short description. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
 	        </div>
+    	</div>
+    	<div class="row">
+            <div class="box">
+                <form>
+                    <div class="form-group">
+                        <label for="Name">Name</label>
+                        <input type="name" class="form-control" id="nameform" aria-describedby="emailHelp" placeholder="Enter your name">
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">Email</label>
+                        <input type="email" class="form-control" id="passwordform" placeholder="Please enter your student email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="Date">Date</label>
+                        <input class="form-control" type="date" value="" id="dateform">
+                    </div>
+                    <div class="form-group">
+                        <label for="Questions/Comments">Questions/Comments</label>
+                        <textarea class="form-control" id="questions/comments" rows="4"></textarea>
+                    </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <button type="submit" class="btn btn-primary">Clear</button>
+                </form>
+           </div>
     	</div>
     </div>
     <!-- /.container -->
