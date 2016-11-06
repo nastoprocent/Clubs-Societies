@@ -12,6 +12,110 @@
 	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
 ?>
+
+<?php 
+		
+			$servername="localhost";
+			$username="root";
+			$password="";
+			$conn = new mysqli($servername, $username, $password, 'clubsandsocs');
+			if ($conn->connect_error)
+			{
+				die("Connection failed: " . $conn->connect_error);
+			}
+			
+			
+        $nameErr = $dateofbirthErr = $emailErr = $phoneErr = "";
+        $name = $dateofbirth = $email = $phone = $questions = "";
+        function test_data($data)
+        {
+            $data=trim($data);
+            $data=stripslashes($data);
+            $data=htmlspecialchars($data);
+            return $data;
+        }
+        $errors = array();
+        $valid=0; 
+        if ( $_SERVER["REQUEST_METHOD"] =="POST" )
+        {
+            $name=$_POST["name"];
+            if( empty($name) )
+            {
+                $nameErr = "Please Enter your Name";
+                $errors[]= $nameErr ;
+            }
+            else
+            {
+                if( !preg_match("/^[a-zA-Z ]*$/",$name) )
+                {
+                    $nameErr = "Wrong characters in the Name";
+                    $errors[]= $nameErr ;
+                }
+                else
+                {
+                    $name=test_data($name);
+                    $valid++;
+
+                }
+            }
+            $dateofbirth=$_POST["dateofbirth"];
+            if( empty($dateofbirth) )
+            {
+                $dateofbirthErr = "Please Enter your Date of Birth";
+                $errors[]= $dateofbirthErr ;
+            }
+            else
+            { 
+                $dateofbirth=test_data($dateofbirth);
+                $valid++;
+            }
+            $email=$_POST["email"];
+            if( empty($email) )
+            {
+                $emailErr = "Please Enter Email Address";
+                $errors[]= $emailErr ;
+            }
+            else
+            {
+                if( !filter_var($email, FILTER_VALIDATE_EMAIL) )
+                {
+                    $emailErr = "Invalid Email Address";
+                    $errors[]= $emailErr ;
+                }
+                else
+                {
+                    $email=test_data($email);
+                    $valid++;
+                }   
+            }       
+            $phone=$_POST["phone"];
+            if( empty($phone) )
+            {
+                $phoneErr = "Please Enter Phone Number";
+                $errors[]= $phoneErr ;
+            }
+            else
+            { 
+                if( !preg_match("/^[0-9]*$/",$phone ) )
+                {
+                    $phoneErr = "Invalid Phone number";
+                    $errors[]= $phoneErr ;
+                }
+                else
+                {
+                    $phone=test_data($phone);
+                    $valid++;
+                }   
+            }
+    }
+    if($valid==4)
+    {
+    $conn->query("INSERT INTO details (name, dateofbirth, email, phone, questions ) VALUES ( '".$_POST['name']."', '".$_POST['dateofbirth']."', '".$_POST['email']."', '".'0'.$_POST['phone']."', '".$_POST['questions']."')");
+    $conn->close();
+
+    }
+    ?>
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -127,7 +231,7 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8">
-                        <img class="img-responsive img-rounded" src="http://placehold.it/900x500" alt="">
+                        <img class="img-responsive img-rounded" src="img/wearegamers.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <h1>Gaming Society</h1>
@@ -169,32 +273,31 @@
         
     	<div class="row">
             <div class="box">
-                <form>
+                <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name">Name</label>
-                        <input type="name" class="form-control" id="nameform" aria-describedby="emailHelp" placeholder="Enter your name">
+                        <input type="text" class="form-control" name="name" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="email" class="form-control" id="passwordform" placeholder="Please enter your student email">
+                        <input type="text" class="form-control" name="email" value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
-                      <label for="phone" class="from-control">Phone Number</label>
-                        <input class="form-control" type="tel" value="08" id="phone">
+                        <label for="phone">Phone Number</label>
+                        <input type="text" class="form-control" name="phone" value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
-                        <input class="form-control" type="date" value="" id="dateform">
+                        <input class="form-control" type="text" name="dateofbirth" value="<?php if(isset($_POST['dateofbirth']) && empty($dateofbirthErr)){ echo $_POST['dateofbirth'];} else {echo '';}?>" required><span class="error"><?php echo $dateofbirthErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
-                        <label for="Questions/Comments">Questions/Comments</label>
-                        <textarea class="form-control" id="questions/comments" rows="4"></textarea>
+                        <label for="questions">Questions</label>
+                        <textarea class="form-control" type="text" name="questions" rows="4" value="<?php $_POST = array() ?>"></textarea>
                         
                         <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
                         
                     </div>
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="submit" class="btn btn-primary">Clear</button>
+                        <button type="submit" class="btn btn-primary" >Submit</button>
                 </form>
            </div>
     	</div>
