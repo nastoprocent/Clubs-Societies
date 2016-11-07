@@ -188,7 +188,7 @@
 					</div>
 
 					<h3 class="name">
-					Pool Club
+					<a href="pool.php" target="_blank">Pool Club</a>
 					</h3>
 				</div>
 				<div class="elements" id="one2">
@@ -233,7 +233,7 @@
 					</div>
 
 					<h3 class="name">
-					Music Society
+					<a href="music.php" target="_blank">Music Society</a>
 					</h3>
 				</div>
 				<div class="elements" id="one3">
@@ -270,7 +270,7 @@
 					</div>
 					
 					<h3 class="name">
-					Gaming Society
+					<a href="gaming.php" target="_blank">Gaming Society</a>
 					</h3>
 				</div>
 				<div class="elements" id="one4">
