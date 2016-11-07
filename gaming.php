@@ -252,7 +252,7 @@
                         <names>Josephine Andrews</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Co-President:</strong> Josephine Andrews</p>
+                        <p><strong>Co-President:</strong> Cillian John Murray</p>
                     </div>
                     <div class="col-md-4">
                         <names>Cillian John Murray</names><br /><br />
