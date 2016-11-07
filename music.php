@@ -231,7 +231,7 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8">
-                        <img class="img-responsive img-rounded" src="img/music1.png" alt="">
+                        <img class="img-responsive img-rounded" src="img/music1.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <h1> Music Society</h1>
