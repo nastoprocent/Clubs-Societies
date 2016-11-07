@@ -238,8 +238,9 @@
 				</div>
 				<div class="elements" id="one3">
 					<ul>
-					 </br>	<li>1 cup white sugar</li> </br>
-						<li>2 tablespoons all-purpose flour</li> </br>
+					 </br>	
+					 	<li>1 cup white sugar</li></br>
+						<li>2 tablespoons all-purpose flour</li></br>
 					</ul>
 				</div>
 		</div>
