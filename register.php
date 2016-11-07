@@ -36,9 +36,10 @@
 		}
 		
 		//basic email validation
-		if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-			$error = true;
-			$emailError = "Please enter valid email address.";
+		if(!preg_match('/^x[\d]{8}@student\.ncirl\.ie$/', $email)){
+		    // Return Error - Invalid Email
+		    $error = true;
+		    $emailError = 'The email you have entered is invalid, please try again.';
 		} else {
 			// check email exist or not
 			$query = "SELECT userEmail FROM users WHERE userEmail='$email'";
