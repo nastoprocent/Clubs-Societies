@@ -275,9 +275,11 @@
 					</h3>
 				</div>
 				<div class="elements" id="one4">
-						<ul>
-					 </br>	<li>1/3 cup mayonnaise</li> </br>
-						<li>1 teaspoon lemon zest</li> </br>
+					<ul>
+					 </br><li><strong>Co-President:</strong> Josephine Andrews</li></br>
+						<li><strong>Vice President:</strong> Cillian John Murray</li></br>
+						<li><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</li></br>
+					</ul>
 				</div>
 		</div>
 			</br>
