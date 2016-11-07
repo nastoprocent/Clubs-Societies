@@ -36,9 +36,10 @@
 		}
 		
 		//basic email validation
-		if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
-			$error = true;
-			$emailError = "Please enter valid email address.";
+		if(!preg_match('/^x[\d]{8}@student\.ncirl\.ie$/', $email)){
+		    // Return Error - Invalid Email
+		    $error = true;
+		    $emailError = 'The email you have entered is invalid, please try again.';
 		} else {
 			// check email exist or not
 			$query = "SELECT userEmail FROM users WHERE userEmail='$email'";
@@ -126,7 +127,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50" value="<?php echo $name ?>" />
+            	<input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50" value="" />
                 </div>
                 <span class="text-danger"><?php echo $nameError; ?></span>
             </div>
@@ -134,7 +135,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-            	<input type="email" name="email" class="form-control" placeholder="Enter Your Student Email" maxlength="40" value="<?php echo $email ?>" />
+            	<input type="email" name="email" class="form-control" placeholder="Enter Your Student Email" maxlength="40" value="" />
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
             </div>

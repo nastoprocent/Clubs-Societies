@@ -128,7 +128,7 @@
                         <strong>Sign Up</strong>
                     </h2>
                     <hr>
-                    <p><h6><center> Please fill in the form for signing up  Basketball C&S</center></h6></p>
+                    <p><h6><center> Please fill in the form for signing up Gaming C&S</center></h6></p>
                     
                         <form class="form-horizontal" action = "savetoxml.php" method = "post">
                             <div class="form-group">

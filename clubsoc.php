@@ -188,7 +188,7 @@
 					</div>
 
 					<h3 class="name">
-					Pool Club
+					<a href="pool.php" target="_blank">Pool Club</a>
 					</h3>
 				</div>
 				<div class="elements" id="one2">
@@ -233,13 +233,14 @@
 					</div>
 
 					<h3 class="name">
-					Music Society
+					<a href="music.php" target="_blank">Music Society</a>
 					</h3>
 				</div>
 				<div class="elements" id="one3">
 					<ul>
-					 </br>	<li>1 cup white sugar</li> </br>
-						<li>2 tablespoons all-purpose flour</li> </br>
+					 </br>	
+					 	<li>1 cup white sugar</li></br>
+						<li>2 tablespoons all-purpose flour</li></br>
 					</ul>
 				</div>
 		</div>
@@ -270,13 +271,15 @@
 					</div>
 					
 					<h3 class="name">
-					Gaming Society
+					<a href="gaming.php" target="_blank">Gaming Society</a>
 					</h3>
 				</div>
 				<div class="elements" id="one4">
-						<ul>
-					 </br>	<li>1/3 cup mayonnaise</li> </br>
-						<li>1 teaspoon lemon zest</li> </br>
+					<ul>
+					 </br><li><strong>Co-President:</strong> Josephine Andrews</li></br>
+						<li><strong>Vice President:</strong> Cillian John Murray</li></br>
+						<li><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</li></br>
+					</ul>
 				</div>
 		</div>
 			</br>
