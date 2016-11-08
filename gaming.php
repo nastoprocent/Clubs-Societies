@@ -252,7 +252,7 @@
                         <names>Josephine Andrews</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Co-President:</strong> Josephine Andrews</p>
+                        <p><strong>Co-President:</strong> Cillian John Murray</p>
                     </div>
                     <div class="col-md-4">
                         <names>Cillian John Murray</names><br /><br />
@@ -273,6 +273,12 @@
         
     	<div class="row">
             <div class="box">
+                 <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Sign Up</strong>
+                    </h2>
+                    <hr>
+                    <p><h6><center> Please fill in the form for signing up  Basketball C&S</center></h6></p>
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name">Name</label>

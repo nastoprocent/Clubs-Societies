@@ -12,6 +12,7 @@
 	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
 ?>
+<?php include_once('functions.php'); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,6 +32,8 @@
     <link href="css/business-casual.css" rel="stylesheet">
     <link href="css/buttons.css" rel="stylesheet">
 	<link href="css/imghover.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="css/eventsstyle.css"/>
+    <script src="js/jquery.min.js"></script>
 </head>
 
 <body>
@@ -129,14 +132,9 @@
                     </h2>
                     <hr>
                 </div>
-
-
-	
-    <div class="col-sm-4 text-center">
-			
-    </div>
-   
-
+                <div id="calendar_div">
+                	<?php echo getCalender(); ?>
+                </div>
                 <div class="clearfix"></div>
 
          	   	</div>

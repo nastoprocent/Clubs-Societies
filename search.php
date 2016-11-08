@@ -57,7 +57,7 @@
         <script type="text/javascript">
 
         function goToAnchor() {
-          location.href = "https://clubsandsocieties-nastoprocent.c9users.io/search.php#myAnchor";
+          location.href = "search.php#myAnchor";
         }
 
 </script>
