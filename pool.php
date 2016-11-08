@@ -249,21 +249,21 @@
                 <div class="box">
                     <div class="col-md-4">
                         <names>Cillian John Murray</names><br /><br />
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Co-President:</strong> Josephine Andrews</p>
+                        <p><strong>Co-President:</strong> Cillian John Murray</p>
+                    </div>
+                    <div class="col-md-4">
+                        <names>Jim Maguire</names><br /><br />
+                        <img border="0" src="clubsandsocsreps/gaming/gamingrep4.jpg" height="350"></img>
+                        <br /><br />
+                        <p><strong>Vice President:</strong> Jim Maguire</p>
                     </div>
                     <div class="col-md-4">
                         <names>Cillian John Murray</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Vice President:</strong> Cillian John Murray</p>
-                    </div>
-                    <div class="col-md-4">
-                        <names>Ben Kibabu</names><br /><br />
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep1.jpg" height="350"></img>
-                        <br /><br />
-                        <p><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</p>
+                        <p><strong>Creator of FB-Fanpage: </strong>Cillian John Murray</p>
                     </div>
                 </div>
             </div>
@@ -272,12 +272,6 @@
         
     	<div class="row">
             <div class="box">
-                 <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>Sign Up</strong>
-                    </h2>
-                    <hr>
-                    <p><h6><center> Please fill in the form for signing up Pool C&S</center></h6></p>
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name">Name</label>
