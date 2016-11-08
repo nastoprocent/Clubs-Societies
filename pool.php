@@ -249,19 +249,31 @@
                 <div class="box">
                     <div class="col-md-4">
                         <names>Cillian John Murray</names><br /><br />
+<<<<<<< HEAD
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
+=======
+                        <img border="0" src="clubsandsocsreps/pool/gamingrep2.jpg" height="350"></img>
+>>>>>>> 2e8fa3254b27b9e19b5d9423fe01adc71ac3da61
                         <br /><br />
                         <p><strong>Co-President:</strong> Cillian John Murray</p>
                     </div>
                     <div class="col-md-4">
                         <names>Jim Maguire</names><br /><br />
+<<<<<<< HEAD
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep4.jpg" height="350"></img>
+=======
+                        <img border="0" src="clubsandsocsreps/pool/gamingrep4.jpg" height="350"></img>
+>>>>>>> 2e8fa3254b27b9e19b5d9423fe01adc71ac3da61
                         <br /><br />
                         <p><strong>Vice President:</strong> Jim Maguire</p>
                     </div>
                     <div class="col-md-4">
                         <names>Cillian John Murray</names><br /><br />
+<<<<<<< HEAD
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
+=======
+                        <img border="0" src="clubsandsocsreps/pool/gamingrep2.jpg" height="350"></img>
+>>>>>>> 2e8fa3254b27b9e19b5d9423fe01adc71ac3da61
                         <br /><br />
                         <p><strong>Creator of FB-Fanpage: </strong>Cillian John Murray</p>
                     </div>
