@@ -238,9 +238,9 @@
 				</div>
 				<div class="elements" id="one3">
 					<ul>
-					 </br>	
-					 	<li>1 cup white sugar</li></br>
-						<li>2 tablespoons all-purpose flour</li></br>
+					 </br><li><strong>Co-President:</strong> </li></br>
+						<li><strong>Vice President:</strong> </li></br>
+						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
 					</ul>
 				</div>
 		</div>
