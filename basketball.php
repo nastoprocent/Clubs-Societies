@@ -219,7 +219,7 @@
                         <small>Welcome to</small>
                     </h2>
 
-                    <h1 class="brand-name">Gaming</h1>
+                    <h1 class="brand-name"> Basketball Club</h1></h1>
                     <hr class="tagline-divider">
 
                 </div>

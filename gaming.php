@@ -193,16 +193,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/gamingslide1.jpg" alt="" height="500px">
+                                <img class="img-responsive img-full" src="img/gamingSlide1.jpg" alt="" height="500px">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/gamingslide2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingSlide2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/gamingslide3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingSlide3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/gamingslide4.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/gamingSlide4.jpg" alt="">
                             </div>
                         </div>
 
@@ -219,7 +219,7 @@
                         <small>Welcome to</small>
                     </h2>
 
-                    <h1 class="brand-name">Gaming</h1>
+                    <h1 class="brand-name">Gaming Society</h1>
                     <hr class="tagline-divider">
 
                 </div>

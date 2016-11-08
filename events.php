@@ -90,16 +90,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/Slide1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/slideShow1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Slide2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/slideShow2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Slide3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/slideShow3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Slide4.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/slideShow4.jpg" alt="">
                             </div>
                         </div>
 

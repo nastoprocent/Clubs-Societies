@@ -219,7 +219,7 @@
                         <small>Welcome to</small>
                     </h2>
 
-                    <h1 class="brand-name">Music</h1>
+                    <h1 class="brand-name">Music Society</h1>
                     <hr class="tagline-divider">
 
                 </div>
