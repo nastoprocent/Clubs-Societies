@@ -248,32 +248,20 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
-                        <names>Cillian John Murray</names><br /><br />
-<<<<<<< HEAD
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
-=======
+                        <names></names><br /><br />
                         <img border="0" src="clubsandsocsreps/pool/gamingrep2.jpg" height="350"></img>
->>>>>>> 2e8fa3254b27b9e19b5d9423fe01adc71ac3da61
                         <br /><br />
-                        <p><strong>Co-President:</strong> Cillian John Murray</p>
+                        <p><strong>President:</strong> Cillian John Murray</p>
                     </div>
                     <div class="col-md-4">
-                        <names>Jim Maguire</names><br /><br />
-<<<<<<< HEAD
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep4.jpg" height="350"></img>
-=======
+                        <names></names><br /><br />
                         <img border="0" src="clubsandsocsreps/pool/gamingrep4.jpg" height="350"></img>
->>>>>>> 2e8fa3254b27b9e19b5d9423fe01adc71ac3da61
                         <br /><br />
                         <p><strong>Vice President:</strong> Jim Maguire</p>
                     </div>
                     <div class="col-md-4">
-                        <names>Cillian John Murray</names><br /><br />
-<<<<<<< HEAD
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
-=======
+                        <names></names><br /><br />
                         <img border="0" src="clubsandsocsreps/pool/gamingrep2.jpg" height="350"></img>
->>>>>>> 2e8fa3254b27b9e19b5d9423fe01adc71ac3da61
                         <br /><br />
                         <p><strong>Creator of FB-Fanpage: </strong>Cillian John Murray</p>
                     </div>
@@ -283,10 +271,10 @@
         <!-- Content Row -->
         
     	<div class="row">
-            <div class="box">
+            <div class="box" align="center">
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
-                        <label for="Name">Name</label>
+                        <label for="Name" align="left">Name</label>
                         <input type="text" class="form-control" name="name" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
@@ -303,12 +291,12 @@
                     </div>
                     <div class="form-group">
                         <label for="questions">Questions</label>
-                        <textarea class="form-control" type="text" name="questions" rows="4" value="<?php $_POST = array() ?>"></textarea>
+                        <textarea id="filterta" class="form-control" type="text" name="questions" rows="4" value="<?php $_POST = array() ?>"></textarea>
                         
                         <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
                         
                     </div>
-                        <button type="submit" class="btn btn-primary" >Submit</button>
+                        <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
                 </form>
            </div>
     	</div>
@@ -342,6 +330,30 @@
     </footer>
     
 </body>
+
+<!-- Javascript Word Filter -->
+<script type="text/javascript">
+function check_val()
+{
+ var bad_words=new Array("death","kill","murder","cornflakes with oranges");
+ var check_text=document.getElementById("filterta").value;
+ var error=0;
+ for(var i=0;i<bad_words.length;i++)
+ {
+  var val=bad_words[i];
+  if((check_text.toLowerCase()).indexOf(val.toString())>-1)
+  {
+   error=error+1;
+  }
+ }
+	
+ if(error>0)
+ {
+  alert("Some Bad Words In Your Text!")
+ }
+}
+</script>
+
 
 </html>
 <?php ob_end_flush(); ?>
