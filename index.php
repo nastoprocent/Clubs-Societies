@@ -1,11 +1,10 @@
 <?php
 	ob_start();
-	session_start();
-	require_once 'dbconnect.php';
+	session_start(); // Starts the session
+	require_once 'dbconnect.php';// Import the file "dbconnect.php" which is the connection of project with the database
 	
-	// it will never let you open index(login) page if session is set
-	if ( isset($_SESSION['user'])!="" ) {
-		header("Location: home.php");
+	if ( isset($_SESSION['user'])!="" ) { // It will never let you open index(login) page if you are logged in
+		header("Location: home.php"); // Automatic send to home.php and blocking index page.
 		exit;
 	}
 	
@@ -13,7 +12,7 @@
 	
 	if( isset($_POST['btn-login']) ) {	
 		
-		// prevent sql injections/ clear user invalid inputs
+		// Prevent sql injections (attacks) / clear user invalid inputs
 		$email = trim($_POST['email']);
 		$email = strip_tags($email);
 		$email = htmlspecialchars($email);
@@ -21,35 +20,34 @@
 		$pass = trim($_POST['pass']);
 		$pass = strip_tags($pass);
 		$pass = htmlspecialchars($pass);
-		// prevent sql injections / clear user invalid inputs
+		// Prevent sql injections (attacks) / clear user invalid inputs
 		
-		if(empty($email)){
-			$error = true;
-			$emailError = "Please enter your email address.";
-		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) {
+		// Email and Password validation if boxes are empty and if the email or password are valid
+		if(empty($email)){ // if(empty($email)) checks if the box (email) is empty
+			$error = true; // $error = true; if  the box is empty return true which means that there is an error
+			$emailError = "Please enter your email address."; // $emailError displays the error message that is between the ""
+		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) { // else if used with !filter_var is used to check if the email is in correct structure
 			$error = true;
 			$emailError = "Please enter valid email address.";
 		}
-		
 		if(empty($pass)){
 			$error = true;
 			$passError = "Please enter your password.";
 		}
 		
-		// if there's no error, continue to login
+		// If there's no error this code allows the user to log in:
 		if (!$error) {
 			
-			$password = hash('sha256', $pass); // password hashing using SHA256
-		
-			$res=mysql_query("SELECT userId, userName, userPass FROM users WHERE userEmail='$email'");
-			$row=mysql_fetch_array($res);
-			$count = mysql_num_rows($res); // if uname/pass correct it returns must be 1 row
+			$password = hash('sha256', $pass); // Password hashing using SHA256 it is encripting of the password that the user is entering so that third people cant read it, to check it do SELECT * FROM users;
+			$res=mysql_query("SELECT userId, userName, userPass FROM users WHERE userEmail='$email'"); // Takes the data from the database where the userEmail is equal to the $email that has been inserted
+			$row=mysql_fetch_array($res);	// $row = mysql_fetch_array($res)it is returning the row
+			$count = mysql_num_rows($res); // If the mail and password correct, it will return only one row
 			
-			if( $count == 1 && $row['userPass']==$password ) {
+			if( $count == 1 && $row['userPass'] == $password ) { // it is taking the userPass and user Id for the session, if the data inserted during login is correct (rest of description line 50) -
 				$_SESSION['user'] = $row['userId'];
-				header("Location: home.php");
+				header("Location: home.php"); // - header("Location: home.php"); moves the user to the home.php just if the users data is correct
 			} else {
-				$errMSG = "Incorrect Credentials, Try again...";
+				$errMSG = "Incorrect Credentials, Try again..."; // returning error if anything goes wrong.
 			}
 				
 		}
