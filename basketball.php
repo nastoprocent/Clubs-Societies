@@ -237,9 +237,6 @@
                         <h1>Gaming Society</h1>
                         <p>Welcome to the NCI Gaming Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
 
-<<<<<<< HEAD
-                            Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
-=======
 
         <div class="row">
             <div class="box">
@@ -373,7 +370,6 @@
                                         </select>
                                   </div>
                             </div>
->>>>>>> eb2892a2a960b2e378fc93a1e6d1ab9915ab11a6
                             
                             If you post any form of spam on this page I will unleash my angry ban hammer and it upsets our team greatly. </p>
                     </div>
