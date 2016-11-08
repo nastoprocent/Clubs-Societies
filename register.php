@@ -1,6 +1,6 @@
 <?php
 	ob_start();
-	session_start();
+	session_start(); // Starts the session
 	if( isset($_SESSION['user'])!="" ){
 		header("Location: home.php");
 	}
@@ -10,7 +10,7 @@
 
 	if ( isset($_POST['btn-signup']) ) {
 		
-		// clean user inputs to prevent sql injections
+		// clean user inputs to prevent sql injections (attacks)
 		$name = trim($_POST['name']);
 		$name = strip_tags($name);
 		$name = htmlspecialchars($name);
@@ -26,17 +26,17 @@
 		// basic name validation
 		if (empty($name)) {
 			$error = true;
-			$nameError = "Please enter your full name.";
-		} else if (strlen($name) < 3) {
+			$nameError = "Please enter your full name."; // Checking if the name box is empty
+		} else if (strlen($name) < 3) { //length of name at least 3 letters
 			$error = true;
 			$nameError = "Name must have atleat 3 characters.";
-		} else if (!preg_match("/^[a-zA-Z ]+$/",$name)) {
+		} else if (!preg_match("/^[a-zA-Z ]+$/",$name)) { //checking if the name contains only letters (small or capital)
 			$error = true;
 			$nameError = "Name must contain alphabets and space.";
 		}
 		
 		//basic email validation
-		if(!preg_match('/^x[\d]{8}@student\.ncirl\.ie$/', $email)){
+		if(!preg_match('/^x[\d]{8}@student\.ncirl\.ie$/', $email)){ // forcing exact x(8 numbers)@student.ncirl.ie on the user/student
 		    // Return Error - Invalid Email
 		    $error = true;
 		    $emailError = 'The email you have entered is invalid, please try again.';
