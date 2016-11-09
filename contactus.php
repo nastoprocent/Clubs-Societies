@@ -34,7 +34,7 @@
     <script language="JavaScript">
 
     // this are your wrong entered words, check them and change for our contact us
-    var swear_words_arr=new Array("bloody","war","terror");
+    var swear_words_arr=new Array("shit","fuck","bitch","piss","dick","pussy","cock","fag","asshole","arsehole","bastard","slut","douche","fanny","cunt","faggot","nigga","nigger","motherfucker","muthafucker","knobhead","twat","shitbag","wanker","bollocks","knacker","dickhead","bellend","shite","bumhole","tosser","cuntflaps","slag","gobshite","nutsack","asswipe","arsewipe","choad","shitter","prick","pisswizard");
     
     var swear_alert_arr=new Array;
     var swear_alert_count=0;
