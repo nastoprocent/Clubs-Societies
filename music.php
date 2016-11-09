@@ -272,7 +272,13 @@
         <!-- Content Row -->
         
     	<div class="row">
-            <div class="box">
+            <div class="box" align="center">
+                <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Sign Up</strong>
+                    </h2>
+                    <hr>
+                    <p><h6><center> Please fill in the form if you want to sign up for Music Society</center></h6></p>
                 <h4><center>Sign up</center></h4>
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">

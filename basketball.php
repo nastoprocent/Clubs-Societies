@@ -272,6 +272,12 @@
         
     	<div class="row">
             <div class="box" align="center">
+                <hr>
+                    <h2 class="intro-text text-center">
+                        <strong>Sign Up</strong>
+                    </h2>
+                    <hr>
+                    <p><h6><center> Please fill in the form if you want to sign up for Basketball Club</center></h6></p>
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
