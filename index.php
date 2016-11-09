@@ -22,19 +22,6 @@
 		$pass = htmlspecialchars($pass);
 		// Prevent sql injections (attacks) / clear user invalid inputs
 		
-		// Email and Password validation if boxes are empty and if the email or password are valid
-		if(empty($email)){ // if(empty($email)) checks if the box (email) is empty
-			$error = true; // $error = true; if  the box is empty return true which means that there is an error
-			$emailError = "Please enter your email address."; // $emailError displays the error message that is between the ""
-		} else if ( !filter_var($email,FILTER_VALIDATE_EMAIL) ) { // else if used with !filter_var is used to check if the email is in correct structure
-			$error = true;
-			$emailError = "Please enter valid email address.";
-		}
-		if(empty($pass)){
-			$error = true;
-			$passError = "Please enter your password.";
-		}
-		
 		// If there's no error this code allows the user to log in:
 		if (!$error) {
 			

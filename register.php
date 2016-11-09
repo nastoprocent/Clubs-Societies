@@ -127,7 +127,7 @@
             <div class="form-group">
             	<div class="input-group">
                 <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="text" name="name" class="form-control" placeholder="Enter Your Name" maxlength="50" value="" />
+            	<input type="text" name="name" class="form-control" placeholder="Enter Your Name Only" maxlength="50" value="" />
                 </div>
                 <span class="text-danger"><?php echo $nameError; ?></span>
             </div>

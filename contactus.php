@@ -26,10 +26,60 @@
     <title>Contact Us</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/contactusbootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/business-casual.css" rel="stylesheet">
+    
+    <script language="JavaScript">
+
+    // this are your wrong entered words, check them and change for our contact us
+    var swear_words_arr=new Array("bloody","war","terror");
+    
+    var swear_alert_arr=new Array;
+    var swear_alert_count=0;
+    function reset_alert_count()
+    {
+     swear_alert_count=0;
+    }
+    function validate_message()
+    {
+     reset_alert_count();
+     var compare_text=document.form1.message.value;
+     for(var i=0; i<swear_words_arr.length; i++)
+     {
+      for(var j=0; j<(compare_text.length); j++)
+      {
+       if(swear_words_arr[i]==compare_text.substring(j,(j+swear_words_arr[i].length)).toLowerCase())
+       {
+        swear_alert_arr[swear_alert_count]=compare_text.substring(j,(j+swear_words_arr[i].length));
+        swear_alert_count++;
+       }
+      }
+     }
+     var alert_text="";
+     for(var k=1; k<=swear_alert_count; k++)
+     {
+      alert_text+="\n" + "(" + k + ")  " + swear_alert_arr[k-1];
+     }
+     if(swear_alert_count>0)
+     { // displaying the words that are being not allowed to use here :
+      alert("The form cannot be submitted.\nThe following illegal words were found:\n_______________________________\n" + alert_text + "\n_______________________________");
+      document.form1.message.select();
+     }
+     else
+     {
+      document.form1.submit();
+     }
+    }
+    function select_area()
+    {
+     document.form1.message.select();
+    }
+    window.onload=reset_alert_count;
+    //  End -->
+    
+</script>
 
 </head>
 <body>
@@ -107,15 +157,15 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please contact us if you would like to know anything about a recipe or anything about or site. We will gladly get back to you.</center></h6></p>
-                        <form action = "savetoxml.php" method = "post">
+                        <form method = "post" name="form1">
                             <div class="row">
                                 <div class="form-group col-lg-4">
                                     <label>Name</label>
-                                    <input type="text" name="name" class="form-control">
+                                    <input type="text" name="name" class="form-control" value="<?php echo $userRow['userName']; ?>">
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control">
+                                    <input type="email" name="email" class="form-control" value="<?php echo $userRow['userEmail']; ?>">
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <label>Phone Number</label>
@@ -123,12 +173,12 @@
                                 </div>
                                 <div class="clearfix"></div>
                                 <div class="form-group col-lg-12">
-                                    <label>Message</label>
-                                    <textarea class="form-control" name="message" rows="6"></textarea>
+                                    <label>Please describe the problem or question that you have.</label>
+                                    <textarea class="form-control" name="message" rows="6" onclick="select_area()"></textarea>
                                 </div>
                                 <div class="form-group col-lg-12">
-                                    <input type="hidden" name="save" value="contact">
-                                    <button type="submit" class="btn btn-default">Submit</button>
+                                    <input type="hidden" name="save" value="button">
+                                    <button type="button" class="btn btn-default" onclick="validate_message();" value="Submit">Submit</button>
                                 </div>
                             </div>
                         </form>
