@@ -349,7 +349,8 @@ function check_val()
 	
  if(error>0)
  {
-  alert("Some Bad Words In Your Text!")
+  alert("Some Bad Words In Your Text!");
+  window.stop();
  }
 }
 </script>
