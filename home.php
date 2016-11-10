@@ -27,8 +27,8 @@
       
       <link rel="stylesheet" href="assets/css/Homebootstrap.css" type="text/css"  />
       <link rel="stylesheet" href="assets/css/loginposition.css" type="text/css" />
-      <link href="assets/css/stylish-portfolio.css" rel="stylesheet">
-      <link href="assets/css/agency.css" rel="stylesheet">
+      <link href="assets/css/Homestylish-portfolio.css" rel="stylesheet">
+      <link href="assets/css/Homeagency.css" rel="stylesheet">
       
   </head>
 <body>
@@ -75,8 +75,7 @@
                 <br>
               </div>
                 <a href="clubsoc.php" class="btn btn-dark btn-lg">Find Out More</a>
-             	
-      </header>	
+      </header> 
    
     
     <script src="assets/jquery-1.11.3-jquery.min.js"></script>

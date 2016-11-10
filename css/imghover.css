@@ -88,3 +88,7 @@
   box-shadow: 0 0 5px #fff;
   border-radius: 50px;
 }
+
+.add{margin: 15px;}
+.add a{display: inline-block; transition: all 0.5s;}
+.add a:hover {transform: rotate(360deg);}
