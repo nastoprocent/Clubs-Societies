@@ -26,7 +26,7 @@
       <title>Clubs and Societies</title>
       
       <link rel="stylesheet" href="assets/css/Homebootstrap.css" type="text/css"  />
-<link rel="stylesheet" href="assets/css/loginposition.css" type="text/css" />
+      <link rel="stylesheet" href="assets/css/loginposition.css" type="text/css" />
       <link href="assets/css/stylish-portfolio.css" rel="stylesheet">
       <link href="assets/css/agency.css" rel="stylesheet">
       
