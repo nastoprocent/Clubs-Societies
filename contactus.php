@@ -156,7 +156,7 @@
                         <strong>form</strong>
                     </h2>
                     <hr>
-                    <p><h6><center> Please contact us if you would like to know anything about a recipe or anything about or site. We will gladly get back to you.</center></h6></p>
+                    <p><h6><center> Please contact us if you have any further questions or problems about our site. We will gladly get back to you.</center></h6></p>
                         <form method = "post" name="form1">
                             <div class="row">
                                 <div class="form-group col-lg-4">
