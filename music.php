@@ -279,7 +279,6 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Music Society</center></h6></p>
-                <h4><center>Sign up</center></h4>
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name">Name</label>
