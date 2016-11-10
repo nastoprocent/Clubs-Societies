@@ -31,6 +31,16 @@ body {
     border-radius: 0;
     color: #fff;
     background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    width:200px;
+    height:50px;
+    top:340px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    font-size:25px;
+    padding: 10 10 5 5;
 }
 
 .btn-dark:hover,
