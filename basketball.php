@@ -281,11 +281,11 @@
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name" value="<?php echo $userRow['userName']; ?><?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" value="<?php echo $userRow['userEmail']; ?><?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
