@@ -27,12 +27,10 @@
     <title>Clubs and Societies</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/events/Eventsbootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
-    <link href="css/buttons.css" rel="stylesheet">
-	<link href="css/imghover.css" rel="stylesheet">
-	<link type="text/css" rel="stylesheet" href="css/eventsstyle.css"/>
+    <link href="css/events/Eventsbusiness-casual.css" rel="stylesheet">
+	<link href="css/events/Eventsstyle.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
 </head>
 
@@ -90,16 +88,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/slideShow1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/events/EventslideShow1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slideShow2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/events/EventslideShow2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slideShow3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/events/EventslideShow3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slideShow4.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/events/EventslideShow4.jpg" alt="">
                             </div>
                         </div>
 
@@ -144,11 +142,17 @@
 
     <!-- /.container -->
 
-    <footer>
+<footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+                    <div class="add">
+				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
+				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
+				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
+			</div>
                 </div>
             </div>
         </div>

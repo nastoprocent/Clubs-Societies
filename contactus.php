@@ -26,10 +26,10 @@
     <title>Contact Us</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/contactusbootstrap.min.css" rel="stylesheet">
+    <link href="css/contactus/Contactusbootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/contactus/Contactusbusiness-casual.css" rel="stylesheet">
     
     <script language="JavaScript">
 
@@ -161,11 +161,11 @@
                             <div class="row">
                                 <div class="form-group col-lg-4">
                                     <label>Name</label>
-                                    <input type="text" name="name" class="form-control" value="<?php echo $userRow['userName']; ?>">
+                                    <input type="text" name="name" class="form-control" disabled value="<?php echo $userRow['userName']; ?>">
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" value="<?php echo $userRow['userEmail']; ?>">
+                                    <input type="email" name="email" class="form-control" disabled value="<?php echo $userRow['userEmail']; ?>">
                                 </div>
                                 <div class="form-group col-lg-4">
                                     <label>Phone Number</label>
@@ -190,11 +190,17 @@
     </div>           
     <!-- /.container -->
 
-    <footer>
+   <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+                    <div class="add">
+				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
+				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
+				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
+			</div>
                 </div>
             </div>
         </div>

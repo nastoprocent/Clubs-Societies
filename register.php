@@ -91,8 +91,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0,  minimum-scale=1.0">
 <title>Registration</title>
-<link rel="stylesheet" href="assets/css/Newbootstrap.css" type="text/css"  />
-<link rel="stylesheet" href="assets/css/loginposition.css" type="text/css" />
+<link rel="stylesheet" href="css/register/Registerbootstrap.css" type="text/css"  />
+<link rel="stylesheet" href="css/register/Registerposition.css" type="text/css" />
 </head>
 <body>
 

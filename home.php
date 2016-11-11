@@ -25,10 +25,9 @@
       
       <title>Clubs and Societies</title>
       
-      <link rel="stylesheet" href="assets/css/Homebootstrap.css" type="text/css"  />
-      <link rel="stylesheet" href="assets/css/loginposition.css" type="text/css" />
-      <link href="assets/css/Homestylish-portfolio.css" rel="stylesheet">
-      <link href="assets/css/Homeagency.css" rel="stylesheet">
+      <link rel="stylesheet" href="css/home/Homebootstrap.css" type="text/css"  />
+      <link href="css/home/Homestylish-portfolio.css" rel="stylesheet">
+      <link href="css/home/Homeagency.css" rel="stylesheet">
       
   </head>
 <body>
@@ -78,8 +77,8 @@
       </header> 
    
     
-    <script src="assets/jquery-1.11.3-jquery.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="js/jquery-1.11.3-jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     
 </body>
 </html>

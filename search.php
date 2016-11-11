@@ -40,8 +40,9 @@
 
 <!Doctype html>
 <html>
+    
     <head>
-         <meta charset="utf-8">
+        <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="">
@@ -50,18 +51,18 @@
         <title>Search for clubs and societies</title>
     
         <!-- Bootstrap Core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/search/Searchbootstrap.min.css" rel="stylesheet">
         <!-- Custom CSS -->
-        <link href="css/business-casual.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/search.css"/>
+        <link href="css/search/Searchbusiness-casual.css" rel="stylesheet">
+        <link href="css/search/Search.css" rel="stylesheet">
+        
         <script type="text/javascript">
-
-        function goToAnchor() {
-          location.href = "search.php#myAnchor";
-        }
-
-</script>
+            function goToAnchor() {
+              location.href = "search.php#myAnchor";
+            }
+        </script>
     </head>
+    
     <body onload="goToAnchor();">
         
         
@@ -117,16 +118,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/Slide1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/search/slideShow1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Slide2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/search/slideShow2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Slide3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/search/slideShow3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/Slide4.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/search/slideShow4.jpg" alt="">
                             </div>
                         </div>
 
@@ -174,6 +175,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+                    <div class="add">
+				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
+				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
+				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
+			</div>
                 </div>
             </div>
         </div>

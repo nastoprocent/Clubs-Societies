@@ -130,10 +130,10 @@
     <title>Pool</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/pool/Poolbootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/pool/Poolbusiness-casual.css" rel="stylesheet">
 
 </head>
 
@@ -193,16 +193,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/pool4.jpg" alt="" height="500px">
+                                <img class="img-responsive img-full" src="img/pool/pool4.jpg" alt="" height="500px">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/pool1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pool/pool1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/pool2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pool/pool2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/pool3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/pool/pool3.jpg" alt="">
                             </div>
                         </div>
 
@@ -231,7 +231,7 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8">
-                        <img class="img-responsive img-rounded" src="img/pool4.jpg" alt="">
+                        <img class="img-responsive img-rounded" src="img/pool/pool4.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <h1>Gaming Society</h1>
@@ -281,15 +281,19 @@
                 <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name" disabled value="<?php echo $userRow['userName']; ?><?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" disabled value="<?php echo $userRow['userEmail']; ?><?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="text" class="form-control" name="phone" value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="phone"  value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Society</label>
+                        <input type="text" class="form-control" name="society"  placeholder="Pool" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
@@ -325,11 +329,17 @@
     </script>
 	
 	
-    <footer>
+ <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+                    <div class="add">
+				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
+				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
+				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
+			</div>
                 </div>
             </div>
         </div>

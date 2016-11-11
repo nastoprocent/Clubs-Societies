@@ -26,11 +26,10 @@
     <title>Clubs and Societies</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/clubsoc/ClubSocbootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
-    <link href="css/buttons.css" rel="stylesheet">
-	<link href="css/imghover.css" rel="stylesheet">
+    <link href="css/clubsoc/ClubSocbusiness-casual.css" rel="stylesheet">
+    <link href="css/clubsoc/ClubSocstyle.css" rel="stylesheet">
 	
 </head>
 
@@ -84,16 +83,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/slideShow1.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/clubsoc/slideShow1.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slideShow2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/clubsoc/slideShow2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slideShow3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/clubsoc/slideShow3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/slideShow4.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/clubsoc/slideShow4.jpg" alt="">
                             </div>
                         </div>
 
@@ -126,13 +125,11 @@
                     </h2>
                     <hr>
                 </div>
-
-
 	
     <div class="col-sm-4 text-center">
 	    <div id="img">
     		<div class="hovereffect">
-    			<img class="img-responsive" src="img/basketball.jpg" alt="Society or Club" border="5">
+    			<img class="img-responsive" src="img/clubsoc/basketball.jpg" alt="Society or Club" border="5">
     			<div class="overlay">
          			<h2>Basketball Club</h2>
         			<a class="info" href="basketball.php">Find out More</a>
@@ -171,7 +168,7 @@
 		<!-- Societies and Clubs 2 -->
 			<div id="img">
     		<div class="hovereffect">
-    			<img class="img-responsive" src="img/pool.jpg" alt="Society or Club" border="5">
+    			<img class="img-responsive" src="img/clubsoc/pool.jpg" alt="Society or Club" border="5">
     			<div class="overlay">
          			<h2>Pool Club</h2>
         			<a class="info" href="pool.php">Find out More</a>
@@ -215,7 +212,7 @@
 		
 		<div id="img">
     		<div class="hovereffect">
-    			<img class="img-responsive" src="img/music.jpg" alt="Society or Club" border="5">
+    			<img class="img-responsive" src="img/clubsoc/music.jpg" alt="Society or Club" border="5">
     			<div class="overlay">
          			<h2>Music Society</h2>
         			<a class="info" href="music.php">Find out More</a>
@@ -254,7 +251,7 @@
 		
 				<div id="img">
 		    		<div class="hovereffect">
-		    			<img class="img-responsive" src="img/gaming.jpg" alt="Society or Club" border="5">
+		    			<img class="img-responsive" src="img/clubsoc/gaming.jpg" alt="Society or Club" border="5">
 		    			<div class="overlay">
 		         			<h2>Gaming Society</h2>
 		        			<a class="info" href="gaming.php">Find out More</a>
@@ -310,10 +307,7 @@
 			</div>
                 </div>
             </div>
-             
-            
         </div>
-        
     </footer>
 
         <!-- jQuery -->
