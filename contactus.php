@@ -102,7 +102,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Home</a></li>
-                    <li> <a href="clubsoc.php">Club&Societies</a></li>
+                    <li><a class="page-scroll" href="clubsoc.php">Club&Socs</a></li>
                     <li><a href="events.php">Events</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                     <li class="dropdown">

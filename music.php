@@ -142,7 +142,9 @@
 
 
 
-<body> <script type="text/javascript">
+<body> 
+
+<script type="text/javascript">
         jQuery(document).ready(function ($) {
 
             var jssor_1_SlideshowTransitions = [
@@ -212,7 +214,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a class="page-scroll" href="index.php">Home</a></li>
-            <li><a class="page-scroll" href="clubsoc.php">Club&Socities</a></li>
+            <li><a class="page-scroll" href="clubsoc.php">Clubs&Socs</a></li>
             <li><a class="page-scroll" href="events.php">Events</a></li>
             <li><a class="page-scroll" href="contactus.php">Contact Us</a> </li>
           
@@ -284,7 +286,7 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8">
-                        <img class="img-responsive img-rounded" src="img/music/music1.jpg" alt="">
+                        <img class="img-responsive img-rounded" src="img/music/music.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <h1> Music Society</h1>

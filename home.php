@@ -46,7 +46,7 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a class="page-scroll" href="index.php">Home</a></li>
-            <li><a class="page-scroll" href="clubsoc.php">Club&Societies</a></li>
+            <li><a class="page-scroll" href="clubsoc.php">Clubs&Socs</a></li>
             <li><a class="page-scroll" href="events.php">Events</a></li>
             <li><a class="page-scroll" href="contactus.php">Contact Us</a> </li>
           </ul>
