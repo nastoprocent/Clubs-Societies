@@ -12,6 +12,7 @@
 	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
 ?>
+
 <?php 
 		
 			$servername="localhost";
@@ -129,10 +130,10 @@
     <title>Basket Ball</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/basketball/Basketballbootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/basketball/Basketballbusiness-casual.css" rel="stylesheet">
+    <link href="css/business-casual.css" rel="stylesheet">
 
 </head>
 
@@ -192,16 +193,16 @@
                         <div class="carousel-inner">
 
                             <div class="item active">
-                                <img class="img-responsive img-full" src="img/basketball/BB1.jpg" alt="" height="500px">
+                                <img class="img-responsive img-full" src="img/BB1.jpg" alt="" height="500px">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/basketball/BB2.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/BB2.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/basketball/BB3.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/BB3.jpg" alt="">
                             </div>
                             <div class="item">
-                                <img class="img-responsive img-full" src="img/basketball/BB4.jpg" alt="">
+                                <img class="img-responsive img-full" src="img/BB4.jpg" alt="">
                             </div>
                         </div>
 
@@ -230,7 +231,7 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8">
-                        <img class="img-responsive img-rounded" src="img/basketball/basketball.jpg" alt="">
+                        <img class="img-responsive img-rounded" src="img/pool4.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <h1>BasketBall Society</h1>
@@ -277,7 +278,7 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Basketball Club</center></h6></p>
-                <form name="myform" method="post" action="basketball.php" onSubmit="alert('Thank you for your application!!!!');">
+                <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
                         <input type="text" class="form-control" name="name" disabled value="<?php echo $userRow['userName']; ?><?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
@@ -288,7 +289,7 @@
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="text" class="form-control" name="phone"  value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><sup>*</sup><?php echo $phoneErr; ?></span>
+                        <input type="text" class="form-control" name="phone"  value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Society</label>
@@ -296,11 +297,16 @@
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
-                        <input class="form-control" type="text" name="dateofbirth" value="<?php if(isset($_POST['dateofbirth']) && empty($dateofbirthErr)){ echo $_POST['dateofbirth'];} else {echo '';}?>" required><span class="error"><?php echo $dateofbirthErr; ?></span>
-                         <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+                        <input class="form-control" type="text" name="dateofbirth" value="<?php if(isset($_POST['dateofbirth']) && empty($dateofbirthErr)){ echo $_POST['dateofbirth'];} else {echo '';}?>" required><span class="error"><?php echo $dateofbirthErr; ?><?php $_POST = array() ?></span>
                     </div>
-                    
-                        <button type="submit" class="btn btn-primary" onclick="check_val()"; >Sign UP</button>
+                    <div class="form-group">
+                        <label for="questions">Questions</label>
+                        <textarea id="filterta" class="form-control" type="text" name="questions" rows="4" value="<?php $_POST = array() ?>"></textarea>
+                        
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
+                        
+                    </div>
+                        <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
                 </form>
            </div>
     	</div>
@@ -323,17 +329,11 @@
     </script>
 	
 	
-<footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
-				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
-				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
-			</div>
                 </div>
             </div>
         </div>

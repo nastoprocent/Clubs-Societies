@@ -78,6 +78,14 @@
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         </ol>
+                        
+                        <hr>
+                    <h2 class="brand-before">
+                        <small>Welcome to</small>
+                    </h2>
+
+                    <h1 class="brand-name">Clubs and Societies</h1>
+                    <hr class="tagline-divider">
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
@@ -104,14 +112,6 @@
                             <span class="icon-next"></span>
                         </a>
                     </div>
-                    <hr>
-                    <h2 class="brand-before">
-                        <small>Welcome to</small>
-                    </h2>
-
-                    <h1 class="brand-name">Clubs and Societies</h1>
-                    <hr class="tagline-divider">
-
                 </div>
             </div>
         </div>
@@ -300,11 +300,11 @@
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
                     <div class="add">
-				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
-				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
-				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
-			</div>
+						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					</div>
                 </div>
             </div>
         </div>

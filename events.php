@@ -32,6 +32,14 @@
     <link href="css/events/Eventsbusiness-casual.css" rel="stylesheet">
 	<link href="css/events/Eventsstyle.css" rel="stylesheet">
     <script src="js/jquery.min.js"></script>
+     
+    <!-- Top socs css --> 
+    <style>
+    table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    </style>
 </head>
 
 <body>
@@ -83,6 +91,14 @@
                             <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             <li data-target="#carousel-example-generic" data-slide-to="3"></li>
                         </ol>
+                        
+                        <hr>
+                            <h2 class="brand-before">
+                                <small>Welcome to</small>
+                            </h2>
+        
+                            <h1 class="brand-name"> Clubs and socs Events</h1>
+                            <hr class="tagline-divider">
 
                         <!-- Wrapper for slides -->
                         <div class="carousel-inner">
@@ -109,13 +125,6 @@
                             <span class="icon-next"></span>
                         </a>
                     </div>
-                    <hr>
-                    <h2 class="brand-before">
-                        <small>Welcome to</small>
-                    </h2>
-
-                    <h1 class="brand-name">Events</h1>
-                    <hr class="tagline-divider">
 
                 </div>
             </div>
@@ -133,30 +142,46 @@
                 <div id="calendar_div">
                 	<?php echo getCalender(); ?>
                 </div>
+                
+                <div class="col-lg-12">
+                <table style="width:50%" align="center">
+                 <tr>
+                 <td><b>Top Societies</td></b>
+                 </tr>
+                  <tr>
+                    <td>Pool Society</td>
+                  </tr>
+                  <tr>
+                    <td>Gaming Society</td>
+                  </tr>
+                  <tr>
+                    <td>Music Society</td>
+                  </tr>
+                </table
+                </div>
                 <div class="clearfix"></div>
-
          	   	</div>
         	</div>
  		</div>
 	
 
-    <!-- /.container -->
+    <!-- /.footer -->
 
 <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
-				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
-				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
-			</div>
+                     <div class="add">
+						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					</div>
                 </div>
             </div>
         </div>
-    </footer>
+</footer>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>

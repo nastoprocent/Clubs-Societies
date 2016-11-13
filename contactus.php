@@ -195,12 +195,12 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
-				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
-				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
-			</div>
+                     <div class="add">
+						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					</div>
                 </div>
             </div>
         </div>
