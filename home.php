@@ -69,8 +69,8 @@
   		  <br>
              <div class="background" align="center">   
              <br />
-                <h1>Clubs and Societies</h1>
-                <h3>Welcome to Clubs and Societies</h3>
+                <h1>Welcome to NCI</h1>
+                <h3>Clubs and Societies website</h3>
                 <br>
               </div>
                 <a href="clubsoc.php" class="btn btn-dark btn-lg">Find Out More</a>

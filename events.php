@@ -85,7 +85,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 600);
+                    refSize = Math.min(refSize, 880);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -132,31 +132,43 @@
       </div>
     </nav> 
     
+    
+    
     <!-- Navigation menu -->
     
    <div class="container">
      	<div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                   <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
+                    <hr>
+                            <h2 class="brand-before">
+                                <small>Welcome to</small>
+                            </h2>
+        
+                            <h1 class="brand-name">Clubs and socs Events</h1>
+                            <hr class="tagline-divider">
+
+                   <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 1500px; height: 800px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
                             <div style="position:absolute;display:block;background:url('img/events/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                         </div>
-                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
+                        
+                        
+                        <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 1500px; height: 800px; overflow: hidden;">
                             <div data-p="112.50">
-                                <img data-u="image" src="img/events/01.jpg" />
+                                <img data-u="image" src="img/events/EventslideShow1.jpg" />
                             </div>
                             <a data-u="any" href="http://www.jssor.com" style="display:none">Banner Rotator</a>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/events/02.jpg" />
+                                <img data-u="image" src="img/events/EventslideShow2.jpg" />
                             </div>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/events/03.jpg" />
+                                <img data-u="image" src="img/events/EventslideShow3.jpg" />
                             </div>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/events/04.jpg" />
+                                <img data-u="image" src="img/events/EventslideShow4.jpg" />
                             </div>
                         </div>
                         <!-- Bullet Navigator -->

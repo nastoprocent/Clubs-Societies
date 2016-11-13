@@ -4,8 +4,8 @@
         .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
             position: absolute;
             /* size of bullet elment */
-            width: 12px;
-            height: 12px;
+            width: 50px;
+            height: 50px;
             filter: alpha(opacity=70);
             opacity: .7;
             overflow: hidden;
