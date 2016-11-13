@@ -242,7 +242,7 @@
                                 <small>Welcome to</small>
                             </h2>
         
-                            <h1 class="brand-name"> Music Society</h1>
+                            <h1 class="brand-name"> Gaming Society</h1>
                             <hr class="tagline-divider">
 
                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
