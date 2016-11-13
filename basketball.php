@@ -130,10 +130,10 @@
     <title>Basket Ball</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/basketball/Basketballbootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-casual.css" rel="stylesheet">
+    <link href="css/basketball/Basketballbusiness-casual.css" rel="stylesheet">
 
 </head>
 
