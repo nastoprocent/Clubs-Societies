@@ -215,7 +215,7 @@
     
     </script>   
      <div>    
-     <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2FNciMusicSoc&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: white; overflow: hidden; height: 270px; width: 245px;background:#fafafa;"></iframe>
+     <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2Fclubsandsocs&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: white; overflow: hidden; height: 270px; width: 245px;background:#fafafa;"></iframe>
      <span>Widget by :<a href="http://ncirl.ie"> Nci</a></span></div></div>
 
     
