@@ -31,6 +31,9 @@
     <!-- Custom CSS -->
     <link href="css/events/Eventsbusiness-casual.css" rel="stylesheet">
 	<link href="css/events/Eventsstyle.css" rel="stylesheet">
+	
+	
+    <script src="js/jquery.min.js"></script>
      
     <!-- Top socs css --> 
     <style>
@@ -142,7 +145,7 @@
                 	<?php echo getCalender(); ?>
                 </div>
                 
-                <div class="col-lg-12">
+                <!--class<div class="col-lg-12">
                 <table style="width:50%" align="center">
                  <tr>
                  <td><b>Top Societies</td></b>
@@ -157,7 +160,7 @@
                     <td>Music Society</td>
                   </tr>
                 </table
-                </div>
+                </div>--->
                 <div class="clearfix"></div>
          	   	</div>
         	</div>

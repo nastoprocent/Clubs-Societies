@@ -25,12 +25,9 @@ body{ font-family: sans-serif;}
 	z-index: 9999;
 	top: -115px;
 	left:-55px;
-	background: transparent url(../../img/events/Eventbackground.png) no-repeat top left;
+	background: transparent url(img/events/EventBbackground.png) no-repeat top left;
 	color: #666 !important;
 }
-.add{margin: 15px;}
-.add a{display: inline-block; transition: all 0.5s;}
-.add a:hover {transform: rotate(360deg);}
 .events_window {
 	overflow: hidden;
 	overflow-y: auto;
