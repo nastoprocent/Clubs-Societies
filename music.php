@@ -131,7 +131,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/music/Musicbootstrap.min.css" rel="stylesheet">
     <link href="css/music/Musicbusiness-casual.css" rel="stylesheet">
-    <link href="css/events/Musicslideshow.css" rel="stylesheet">
+    <link href="css/music/Musicslideshow.css" rel="stylesheet">
     <link href="css/music/facebookfloating.css" rel="stylesheet">
     
     <script src="js/jquery.min.js"></script>

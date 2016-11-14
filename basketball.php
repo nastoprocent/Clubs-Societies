@@ -132,7 +132,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/basketball/Basketballbootstrap.min.css" rel="stylesheet">
     <link href="css/basketball/Basketballbusiness-casual.css" rel="stylesheet">
-    <link href="css/events/Basketballslideshow.css" rel="stylesheet">
+    <link href="css/basketball/Basketballslideshow.css" rel="stylesheet">
     <link href="css/music/facebookfloating.css" rel="stylesheet">
     
     <script src="js/jquery.min.js"></script>
@@ -263,7 +263,9 @@
         
                             <h1 class="brand-name"> Baskball Club</h1>
                             <hr class="tagline-divider">
-
+                    
+                    <br />
+                    
                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">

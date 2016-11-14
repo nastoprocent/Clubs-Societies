@@ -132,7 +132,7 @@
     <!-- Bootstrap Core CSS -->
     <link href="css/pool/Poolbootstrap.min.css" rel="stylesheet">
     <link href="css/pool/Poolbusiness-casual.css" rel="stylesheet">
-    <link href="css/events/Poolslideshow.css" rel="stylesheet">
+    <link href="css/pool/Poolslideshow.css" rel="stylesheet">
     <link href="css/music/facebookfloating.css" rel="stylesheet">
     
     
@@ -265,7 +265,7 @@
         
                             <h1 class="brand-name">  Pool Club</h1>
                             <hr class="tagline-divider">
-
+<br />
                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
