@@ -113,7 +113,7 @@
     }
     if($valid==4)
     {
-    $conn->query("INSERT INTO test (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','BasketBall', '".$_POST['dateofbirth']."')");
+    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','BasketBall', '".$_POST['dateofbirth']."')");
     $conn->close();
 
     }
