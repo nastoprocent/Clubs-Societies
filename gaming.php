@@ -131,13 +131,15 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/gaming/Gamingbootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
     <link href="css/gaming/Gamingbusiness-casual.css" rel="stylesheet">
-    <link href="css/events/Eventsslideshow.css" rel="stylesheet">
+    <link href="css/events/Gamingslideshow.css" rel="stylesheet">
+    <link href="css/music/facebookfloating.css" rel="stylesheet">
+    
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
+    <script src="js/floatingfacebook.js"></script>
+	<script>jQuery.noConflict();</script>
 
 </head>
 
@@ -198,6 +200,23 @@
         });
     </script>
     
+    
+    <div class="mtwlikebox" style=""> 
+    <script type="text/javascript"> 
+    
+    jQuery(document).ready(function() {
+        jQuery(".mtwlikebox").hover(function() {
+        jQuery(this).stop().animate({
+        right: "0"}, "medium");
+    }, function() {jQuery(this).stop().animate({
+    right: "-200"}, "medium");
+    }, 500);});
+    
+    </script>   
+     <div>    
+     <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fgroups%2FNCIGAMINGSOC&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: white; overflow: hidden; height: 270px; width: 245px;background:#fafafa;"></iframe>
+     <span>Widget by :<a href="http://ncirl.ie"> Nci</a></span></div></div>
+
 
      <!-- Navigation menu -->
     
@@ -249,7 +268,7 @@
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('img/events/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                            <div style="position:absolute;display:block;background:url('img/gaming/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                         </div>
                         
                         
