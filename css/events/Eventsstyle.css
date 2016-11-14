@@ -80,3 +80,7 @@ a:hover {color: #181919;text-decoration: underline;}
 #calender_section_bot{ width:525px;}
 #calender_section_bot ul li{ height:50px;}
 }
+
+.add{margin: 15px;}
+.add a{display: inline-block; transition: all 0.5s;}
+.add a:hover {transform: rotate(360deg);}
