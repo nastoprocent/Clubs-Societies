@@ -137,6 +137,7 @@
     <link href="css/gaming/Gamingbusiness-casual.css" rel="stylesheet">
     <link href="css/gaming/Gamingslideshow.css" rel="stylesheet">
     <link href="css/music/facebookfloating.css" rel="stylesheet">
+    <link href="css/gaming/Gamingshoutbox.css" rel="stylesheet">
     
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
@@ -347,6 +348,76 @@
                 </div>
             </div>
         
+       <!-- Content Row -->
+        <div class="row">
+            <div class="box">
+                <div class="col-lf-12">
+                    <div id="page">
+            
+                        <div class="block rounded">
+                            <h1> Shoutbox for Gaming Society</h1></h1>
+                        </div>
+                        <br />
+                        <div class="block_main rounded">
+                                <form method="post" action="shout.php">
+                                    <shoutbox>Name: </shoutbox><input type="text" id="name" name="name" disabled value="<?php echo $userRow['userName']; ?>"/>
+                                    <shoutbox>&nbsp Message: </shoutbox><input type="text" id="message" name="message" class="message" /><input type="submit" id="sBtn" value="Submit" />
+                                </form>
+                            <div id="shout"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        <script type="text/javascript">
+        $(function() {
+            
+            //populating shoutbox the first time
+            refresh_shoutbox();
+            // recurring refresh every 2 seconds
+            setInterval("refresh_shoutbox()", 2000);
+        
+            $("#submit").click(function() {
+                // getting the values that user typed
+                var name    = $("#name").val();
+                var message = $("#message").val();
+                // forming the queryString
+                var data = 'name='+ name +'&message='+ message;
+        
+                // ajax call
+                $.ajax({
+                    type: "POST",
+                    url: "shoutgaming.php",
+                    data: data,
+                    success: function(html){ // this happen after we get result
+                        $("#shout").slideToggle(600, function(){
+                            $(this).html(html).slideToggle(600);
+                            $("#message").val("");
+                        });
+                  }
+                });    
+                return false;
+            });
+        });
+        
+        function refresh_shoutbox() {
+            var data = 'refresh=1';
+            
+            $.ajax({
+                    type: "POST",
+                    url: "shoutgaming.php",
+                    data: data,
+                    success: function(html){ // this happen after we get result
+                        $("#shout").html(html);
+                    }
+                });
+        }
+        
+        
+        </script>
+        
+                
         <!-- Content Row -->
         
     	<div class="row">
