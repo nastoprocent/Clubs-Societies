@@ -58,17 +58,7 @@
 
                 }
             }
-            $dateofbirth=$_POST["dateofbirth"];
-            if( empty($dateofbirth) )
-            {
-                $dateofbirthErr = "Please Enter your Date of Birth";
-                $errors[]= $dateofbirthErr ;
-            }
-            else
-            { 
-                $dateofbirth=test_data($dateofbirth);
-                $valid++;
-            }
+            
             $email=$_POST["email"];
             if( empty($email) )
             {
@@ -107,10 +97,23 @@
                     $valid++;
                 }   
             }
+            $society=$_POST["society"];
+            
+            $dateofbirth=$_POST["dateofbirth"];
+            if( empty($dateofbirth) )
+            {
+                $dateofbirthErr = "Please Enter your Date of Birth";
+                $errors[]= $dateofbirthErr ;
+            }
+            else
+            { 
+                $dateofbirth=test_data($dateofbirth);
+                $valid++;
+            }
     }
     if($valid==4)
     {
-    $conn->query("INSERT INTO details (name, dateofbirth, email, phone, questions ) VALUES ( '".$_POST['name']."', '".$_POST['dateofbirth']."', '".$_POST['email']."', '".'0'.$_POST['phone']."', '".$_POST['questions']."')");
+    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Music', '".$_POST['dateofbirth']."')");
     $conn->close();
 
     }
@@ -353,34 +356,30 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Music Society</center></h6></p>
-                <form name="myform" method="post" action="clubsoc.php" onSubmit="alert('Thank you for your application!!!!');">
+                <form name="myform" method="post" action="music.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" disabled value="<?php echo $userRow['userName']; ?><?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name" placeholder="John Smith" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" disabled value="<?php echo $userRow['userEmail']; ?><?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" placeholder="abc@example.com"  value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
-                        <input type="text" class="form-control" name="phone"  value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="phone" placeholder="08********"  value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
-                        <label for="phone">Society</label>
+                        <label for="society">Society</label>
                         <input type="text" class="form-control" name="society"  placeholder="Music" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
-                        <input class="form-control" type="text" name="dateofbirth" value="<?php if(isset($_POST['dateofbirth']) && empty($dateofbirthErr)){ echo $_POST['dateofbirth'];} else {echo '';}?>" required><span class="error"><?php echo $dateofbirthErr; ?><?php $_POST = array() ?></span>
-                    </div>
-                    <div class="form-group">
-                        <label for="questions">Questions</label>
-                        <textarea id="filterta" class="form-control" type="text" name="questions" rows="4" value="<?php $_POST = array() ?>"></textarea>
+                        <input class="form-control" type="text" name="dateofbirth" placeholder="YYYY-MM-DD" value="<?php if(isset($_POST['dateofbirth']) && empty($dateofbirthErr)){ echo $_POST['dateofbirth'];} else {echo '';}?>" required><span class="error"><?php echo $dateofbirthErr; ?><?php $_POST = array() ?></span>
                         
                         <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
-                        
                     </div>
+                    
                         <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
                 </form>
            </div>
