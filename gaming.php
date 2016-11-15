@@ -145,6 +145,9 @@
     <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
     <script src="js/floatingfacebook.js"></script>
 	<script>jQuery.noConflict();</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 
 </head>
 
@@ -190,7 +193,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 880);
+                    refSize = Math.min(refSize, 1100);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -268,7 +271,7 @@
         
                             <h1 class="brand-name"> Gaming Society</h1>
                             <hr class="tagline-divider">
-<br />
+                    <br />
                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -310,11 +313,13 @@
         <!-- Heading Row -->
             <div class="row">
                 <div class="box">
-                    <div class="col-md-8">
+                    <div class="col-md-8"><br />
                         <img class="img-responsive img-rounded" src="img/gaming/wearegamers.jpg" alt="">
                     </div>
                     <div class="col-md-4">
+                        <hr>
                         <h1>Gaming Society</h1>
+                        <hr>
                         <p>Welcome to the NCI Gaming Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
 
                             Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
@@ -329,22 +334,25 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
-                        <names>Josephine Andrews</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Co-President:</strong> Cillian John Murray</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
-                        <names>Cillian John Murray</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Vice President:</strong> Cillian John Murray</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
-                        <names>Ben Kibabu</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep1.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</p>
+                        <hr>
+                        <p><strong>Creator of Fanpage: </strong>Ben Kibabu</p>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -356,7 +364,7 @@
                     <div id="page">
             
                         <div class="block rounded">
-                            <h1> Shoutbox for Gaming Society</h1></h1>
+                            <h1> Gaming Society Shoutbox</h1></h1>
                         </div>
                         <br />
                         <div class="block_main rounded">
@@ -429,6 +437,7 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Gaming Society</center></h6></p>
+                    <br />
                 <form name="myform" method="post" action="gaming.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
@@ -462,13 +471,6 @@
     <!-- /.container -->
 
     
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
@@ -477,7 +479,7 @@
     </script>
 	
 	
-<footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">

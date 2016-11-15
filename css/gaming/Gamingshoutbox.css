@@ -3,10 +3,6 @@
 	padding:0;
 }
 
-
-a { color: #eee; text-decoration: none;}
-a:hover { text-decoration: underline; }
-
 #page{
 	width:800px;
 	margin:20px auto;
@@ -62,6 +58,7 @@ h2 {
     cursor: pointer;
     outline: none;
     padding:3px;
+    padding-right:8px !important;
     border-radius:0 10px 10px 0;
 }
 shoutbox{
@@ -71,7 +68,7 @@ shoutbox{
 }
 
 ul { list-style-type: none; }
-ul li { padding: 10px 0 10px 0; border-bottom: 1px solid #eee; font-size: 15px;}
+ul li { padding: 10px 0 10px 0; border-bottom: 1px solid #eee;}
 .name { font-weight: bold; width: 100px; display: inline-block;}
 .date { color: #ccc; font-family: Arial; font-size: 14px; margin-right: 10px; float:right;}
 .message { font-style: italic; margin-left: 10px; padding:5px;}

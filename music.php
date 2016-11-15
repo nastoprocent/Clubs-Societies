@@ -187,7 +187,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 880);
+                    refSize = Math.min(refSize, 1100);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -307,11 +307,13 @@
         <!-- Heading Row -->
             <div class="row">
                 <div class="box">
-                    <div class="col-md-8">
+                    <div class="col-md-8"><br />
                         <img class="img-responsive img-rounded" src="img/music/music.jpg" alt="">
                     </div>
                     <div class="col-md-4">
+                        <hr>
                         <h1> Music Society</h1>
+                        <hr>
                         <p>Welcome to the NCI Music Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
 
                             Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
@@ -326,22 +328,25 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
-                        <names>Josephine Andrews</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Co-President:</strong> Josephine Andrews</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
-                        <names>Cillian John Murray</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Vice President:</strong> Cillian John Murray</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
-                        <names>Ben Kibabu</names><br /><br />
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep1.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</p>
+                        <hr>
+                        <p><strong>Creator of Fanpage: </strong>Ben Kibabu</p>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -356,6 +361,7 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Music Society</center></h6></p>
+                    <br />
                 <form name="myform" method="post" action="music.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>

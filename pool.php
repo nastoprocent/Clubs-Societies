@@ -143,7 +143,9 @@
     <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
     <script src="js/floatingfacebook.js"></script>
 	<script>jQuery.noConflict();</script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
 </head>
 
 
@@ -188,7 +190,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 880);
+                    refSize = Math.min(refSize, 1100);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -309,11 +311,13 @@
         <!-- Heading Row -->
             <div class="row">
                 <div class="box">
-                    <div class="col-md-8">
+                    <div class="col-md-8"><br />
                         <img class="img-responsive img-rounded" src="img/pool/pool4.jpg" alt="">
                     </div>
                     <div class="col-md-4">
-                        <h1>Gaming Society</h1>
+                        <hr>
+                        <h1>Pool Society</h1>
+                        <hr>
                         <p>Welcome to the NCI Pool Society page! Our aim to provide students of NCI a fun pool experience in the college as well as competing against other colleges in tournaments.  
 
                             Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
@@ -323,40 +327,46 @@
             </div>
         <!-- Heading Row -->
         
-        <!-- Content Row -->
+        <!--  Row -->
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/gamingrep2.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep1.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>President:</strong> Cillian John Murray</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/gamingrep4.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep2.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Vice President:</strong> Jim Maguire</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/gamingrep2.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep3.jpg" height="350"></img>
                         <br /><br />
-                        <p><strong>Creator of FB-Fanpage: </strong>Cillian John Murray</p>
+                        <hr>
+                        <p><strong>Creator of Fanpage: </strong>Cillian John Murray</p>
+                        <hr>
                     </div>
                 </div>
             </div>
         
-        <!-- Content Row -->
+        <!-- Society Reps -->
         
+        <!-- Form -->
     	<div class="row">
             <div class="box" align="center">
-                <hr>
-                    <h2 class="intro-text text-center">
-                        <strong>Sign Up</strong>
-                    </h2>
+                    <hr>
+                        <h2 class="intro-text text-center"><strong>Sign Up</strong></h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Pool Club</center></h6></p>
+                    <br />
                 <form name="myform" method="post" action="pool.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
@@ -380,23 +390,16 @@
                         
                         <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
                     </div>
-                    
                         <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
                 </form>
            </div>
     	</div>
+    	<!-- Form -->
+    	
+    	
     </div>
     <!-- /.container -->
 
-    
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
         interval: 5000 //changes the speed
@@ -404,16 +407,16 @@
     </script>
 	
 	
- <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                     <div class="add">
-						<a href="https://www.facebook.com/NCI-Pool-Snooker-Club-167704356588833/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
-						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
-						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+                    <div class="add">
+    					<a href="https://www.facebook.com/NCI-Pool-Snooker-Club-167704356588833/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+    					<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+    					<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+    					<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
 					</div>
                 </div>
             </div>
@@ -421,31 +424,5 @@
     </footer>
     
 </body>
-
-<!-- Javascript Word Filter -->
-<script type="text/javascript">
-function check_val()
-{
- var bad_words=new Array("death","kill","murder","cornflakes with oranges");
- var check_text=document.getElementById("filterta").value;
- var error=0;
- for(var i=0;i<bad_words.length;i++)
- {
-  var val=bad_words[i];
-  if((check_text.toLowerCase()).indexOf(val.toString())>-1)
-  {
-   error=error+1;
-  }
- }
-	
- if(error>0)
- {
-  alert("Some Bad Words In Your Text!");
-  window.stop();
- }
-}
-</script>
-
-
 </html>
 <?php ob_end_flush(); ?>

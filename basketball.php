@@ -188,7 +188,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 880);
+                    refSize = Math.min(refSize, 1100);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -310,11 +310,13 @@
         <!-- Heading Row -->
             <div class="row">
                 <div class="box">
-                    <div class="col-md-8">
-                        <img class="img-responsive img-rounded" src="img/pool4.jpg" alt="">
+                    <div class="col-md-8"><br />
+                        <img class="img-responsive img-rounded" src="img/basketball/basketball.jpg" alt="">
                     </div>
                     <div class="col-md-4">
+                        <hr>
                         <h1>BasketBall Society</h1>
+                        <hr>
                         <p>Welcome to the NCI BasketBall Society page! Our aim to provide students of NCI a fun BasketBall experience in the college as well as competing against other colleges in tournaments.  
 
                             Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
@@ -329,21 +331,27 @@
                 <div class="box">
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/BasketBall/#.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep1.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>President:</strong> ABC</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/BasketBall/#.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep2.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Vice President:</strong> JKL</p>
+                        <hr>
                     </div>
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/BasketBall/#.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep3.jpg" height="350"></img>
                         <br /><br />
+                        <hr>
                         <p><strong>Creator of FB-Fanpage: </strong>XYZ</p>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -358,6 +366,7 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please fill in the form if you want to sign up for Basketball Club</center></h6></p>
+                    <br />
                 <form name="myform" method="post" action="basketball.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>

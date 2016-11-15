@@ -151,9 +151,11 @@
 			</div>
 			<div class="elements" id="one">
 				<ul>
-				 </br>	<li>1 to 2 tablespoons vinegar, like cider, balsamic, or red wine </li> </br>
-					<li>2 to 3 teaspoons dried herbs, like thyme, oregano, rosemary, or crumbled bay leaf</li> </br>
-				</ul>
+					 </br>
+					 	<li><strong>Co-President:</strong> </li></br>
+						<li><strong>Vice President:</strong> </li></br>
+						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
+					</ul>
 			</div>
 
 		</div>
@@ -190,9 +192,10 @@
 				</div>
 				<div class="elements" id="one2">
 					<ul>
-					</br><li>1 cup olive oil </li> </br>
-					<li>2 medium onions, chopped</li> </br>
-					<li>1 Bunch Celery, halved lengthwise and cut into 1/4-inch-thick slices</li> </br>
+					 </br>
+					 	<li><strong>Co-President:</strong> </li></br>
+						<li><strong>Vice President:</strong> </li></br>
+						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
 					</ul>
 				</div>
 		</div>
@@ -235,7 +238,8 @@
 				</div>
 				<div class="elements" id="one3">
 					<ul>
-					 </br><li><strong>Co-President:</strong> </li></br>
+					 </br>
+					 	<li><strong>Co-President:</strong> </li></br>
 						<li><strong>Vice President:</strong> </li></br>
 						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
 					</ul>
