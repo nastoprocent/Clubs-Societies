@@ -140,6 +140,7 @@
     <link href="css/gaming/Gamingshoutbox.css" rel="stylesheet">
     
     <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
     <script src="js/floatingfacebook.js"></script>
@@ -359,9 +360,9 @@
                         </div>
                         <br />
                         <div class="block_main rounded">
-                                <form method="post" action="shout.php">
+                                <form method="post" action="shoutgaming.php">
                                     <shoutbox>Name: </shoutbox><input type="text" id="name" name="name" disabled value="<?php echo $userRow['userName']; ?>"/>
-                                    <shoutbox>&nbsp Message: </shoutbox><input type="text" id="message" name="message" class="message" /><input type="submit" id="sBtn" value="Submit" />
+                                    <shoutbox>&nbsp Message: </shoutbox><input type="text" id="message" name="message" class="message" /><input type="submit" id="submit" value="Submit" />
                                 </form>
                             <div id="shout"></div>
                         </div>
@@ -369,7 +370,7 @@
                 </div>
             </div>
         </div>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
+        
         <script type="text/javascript">
         $(function() {
             

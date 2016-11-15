@@ -32,7 +32,7 @@ h1{
 	font-size:35px;
 	font-weight:normal;
 	position:relative;
-	color:white;
+	color:black;
 }
 
 h2 {
@@ -54,14 +54,14 @@ h2 {
     margin-top: 20px;
 }
 
-#sBtn{
+#submit{
 	border: 1px solid #000000;
     font-size: 16px;
     background: #f1d829;
     font-weight: bold;
     cursor: pointer;
     outline: none;
-    padding:4px;
+    padding:3px;
     border-radius:0 10px 10px 0;
 }
 shoutbox{
@@ -74,6 +74,6 @@ ul { list-style-type: none; }
 ul li { padding: 10px 0 10px 0; border-bottom: 1px solid #eee; font-size: 15px;}
 .name { font-weight: bold; width: 100px; display: inline-block;}
 .date { color: #ccc; font-family: Arial; font-size: 14px; margin-right: 10px; float:right;}
-.message { font-style: italic; margin-left: 10px; padding:4px;}
-input { margin: 10px 5px 10px 5px; padding:4px;}
+.message { font-style: italic; margin-left: 10px; padding:5px;}
+input { margin: 10px 5px 10px 5px; padding:5px;}
 .message { width: 300px; }
