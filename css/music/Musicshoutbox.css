@@ -1,0 +1,76 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+#page{
+	width:800px;
+	margin:20px auto;
+}
+
+.block{
+    background-color: #7b8b98;
+	margin-bottom:25px;
+	padding:30px;
+	text-align:center;
+}
+
+.block_main {
+    background-color: #7b8b98;
+    padding: 30px; 
+}
+
+.block_main p {
+    margin: 20px 0 20px 0;
+}
+
+h1{
+	font-size:35px;
+	font-weight:normal;
+	position:relative;
+	color:black;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    color:black;
+}
+
+.rounded{
+	-moz-border-radius:12px;
+    -webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+.block_footer {
+    float: right;
+    position: relative;
+    padding: 10px; 
+    margin-top: 20px;
+}
+
+#submit{
+	border: 1px solid #000000;
+    font-size: 16px;
+    background: #f1d829;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding:3px;
+    padding-right:8px !important;
+    border-radius:0 10px 10px 0;
+}
+shoutbox{
+	font-size:15px;
+	font-weight:700;
+	color: black;
+}
+
+ul { list-style-type: none; }
+ul li { padding: 10px 0 10px 0; border-bottom: 1px solid #eee;}
+.name { font-weight: bold; width: 100px; display: inline-block;}
+.date { color: #ccc; font-family: Arial; font-size: 14px; margin-right: 10px; float:right;}
+.message { font-style: italic; margin-left: 10px; padding:5px;}
+input { margin: 10px 5px 10px 5px; padding:5px;}
+.message { width: 300px; }

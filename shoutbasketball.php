@@ -19,7 +19,7 @@ if($_POST['name']) {
     /*** set all errors to execptions ***/
     $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
-    $sql = "INSERT INTO shoutboxgaming (date_time, name, message)
+    $sql = "INSERT INTO shoutboxbasketball (date_time, name, message)
             VALUES (NOW(), :name, :message)";
     /*** prepare the statement ***/
     $stmt = $dbh->prepare($sql);
@@ -45,8 +45,8 @@ if($_POST['refresh']) {
 
 function populate_shoutbox() {
     global $dbh;
-    $sql = "select * from shoutboxgaming order by date_time desc limit 5";
-    echo '<design>';
+    $sql = "select * from shoutboxbasketball order by date_time desc limit 5";
+    echo '<ul>';
     foreach ($dbh->query($sql) as $row) {
         echo '<li>';
         echo '<span class="name">'.$row['name'].'</span>';
@@ -54,6 +54,6 @@ function populate_shoutbox() {
         echo '<span class="date">'.date("d.m.Y H:i", strtotime($row['date_time'])).'</span>';
         echo '</li>';
     }
-    echo '</design>';
+    echo '</ul>';
 }
 ?>
