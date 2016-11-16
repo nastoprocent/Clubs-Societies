@@ -361,6 +361,7 @@
         <!-- Society Reps -->
         
         <!-- Content Row -->
+<<<<<<< HEAD
         <div class="row">
             <div class="box">
                 <div class="col-lf-12">
@@ -375,6 +376,20 @@
                                     <shoutbox>Name: </shoutbox><input type="text" id="name" name="name" disabled value="<?php echo $userRow['userName']; ?>"/>
                                     <shoutbox>&nbsp Message: </shoutbox><input type="text" id="message" name="message" class="message" /><input type="submit" id="submit" value="Submit" />
                                 </form>
+=======
+         <div class="row">
+            <div class="box">
+                <div class="col-lf-12">
+                    <div id="page">
+                        <div class="border rounded">
+                            <shoutboxheading>Pool Society Shoutbox</shoutboxheading>
+                        </div>
+                        <div class="border_main rounded">
+                                <form method="post" action="shoutgaming.php" id="shoutboxform">
+                                    <shoutboxlabels>Name: </shoutboxlabels><input type="text" id="name" name="name" disabled value="<?php echo $userRow['userName']; ?>"/>
+                                    <shoutboxlabels>&nbsp Message: </shoutboxlabels><input type="text" id="message" name="message" class="message" /><input type="submit" id="submit" value="Shout" />
+                                </form><br/>
+>>>>>>> 5a356169af341003322928a7d4db08e66dfdc65b
                             <div id="shout"></div>
                         </div>
                     </div>

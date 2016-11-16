@@ -46,7 +46,7 @@ if($_POST['refresh']) {
 function populate_shoutbox() {
     global $dbh;
     $sql = "select * from shoutboxgaming order by date_time desc limit 5";
-    echo '<ul>';
+    echo '<design>';
     foreach ($dbh->query($sql) as $row) {
         echo '<li>';
         echo '<span class="name">'.$row['name'].'</span>';
@@ -54,6 +54,6 @@ function populate_shoutbox() {
         echo '<span class="date">'.date("d.m.Y H:i", strtotime($row['date_time'])).'</span>';
         echo '</li>';
     }
-    echo '</ul>';
+    echo '</design>';
 }
 ?>
