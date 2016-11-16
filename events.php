@@ -145,7 +145,7 @@
                 	<?php echo getCalender(); ?>
                 </div>
                 
-                <!--class<div class="col-lg-12">
+                <div class="col-lg-12">
                 <table style="width:50%" align="center">
                  <tr>
                  <td><b>Top Societies</td></b>
@@ -160,7 +160,8 @@
                     <td>Music Society</td>
                   </tr>
                 </table
-                </div>--->
+                </div>
+                
                 <div class="clearfix"></div>
          	   	</div>
         	</div>
