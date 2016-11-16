@@ -188,7 +188,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 1100);
+                    refSize = Math.min(refSize, 1050);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -315,11 +315,16 @@
                         <hr>
                         <h1> Music Society</h1>
                         <hr>
-                        <p>Welcome to the NCI Music Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
+                        <p> Welcome to NCI Music Society page (formerly known as Voices of NCI!) 
 
-                            Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
+                            This is going to be the best EVER for culture and music appreciation in the college. 
+
+                            Hope you will join with us for the fun filled events ahead!
                             
-                            If you post any form of spam on this page I will unleash my angry ban hammer and it upsets our team greatly. </p>
+                           NCI music society will be hosting a variety of events throughout the year for people who play or enjoy listening to music!
+                           
+                           Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
+                        </p>
                     </div>
                 </div>
             </div>
@@ -333,6 +338,7 @@
                         <br /><br />
                         <hr>
                         <p><strong>Co-President:</strong> Josephine Andrews</p>
+                        <p><strong>Email:</strong> Josephine_Andrews@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
@@ -340,6 +346,7 @@
                         <br /><br />
                         <hr>
                         <p><strong>Vice President:</strong> Cillian John Murray</p>
+                         <p><strong>Email:</strong> Cillian.murray@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
@@ -347,6 +354,7 @@
                         <br /><br />
                         <hr>
                         <p><strong>Creator of Fanpage: </strong>Ben Kibabu</p>
+                         <p><strong>Email:</strong> Benkibabu@gmail.com</p>
                         <hr>
                     </div>
                 </div>
@@ -483,13 +491,13 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
                     <div class="add">
 						<a href="https://www.facebook.com/NciMusicSoc/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
 						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
 						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
 						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					</div>
+					 </div>
+                    <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
                 </div>
             </div>
         </div>
