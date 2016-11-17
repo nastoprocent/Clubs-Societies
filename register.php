@@ -219,7 +219,7 @@
 				<div class="input-group" align="center">
 					<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
 					<img src="captcha.php" alt="captcha image" id="captcha" width="380px" height="80px"><br />
-					<input type="text" id="captcha" class="form-control" name="captcha" size="6" maxlength="3">
+					<input type="text" id="captcha" class="form-control" name="captcha" size="6" maxlength="3" placeholder="Please enter captcha code here.">
 				</div>
 				<span class="text-danger"><?php echo $captchaErr?></span>
 			</div>
