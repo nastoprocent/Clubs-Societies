@@ -144,7 +144,9 @@
     <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
     <script src="js/floatingfacebook.js"></script>
 	<script>jQuery.noConflict();</script>
-
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    
 </head>
 
 
@@ -466,14 +468,6 @@
     </div>
     <!-- /.container -->
 
-    
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
@@ -499,31 +493,5 @@
 </footer>
     
 </body>
-
-<!-- Javascript Word Filter -->
-<script type="text/javascript">
-function check_val()
-{
- var bad_words=new Array("death","kill","murder","cornflakes with oranges");
- var check_text=document.getElementById("filterta").value;
- var error=0;
- for(var i=0;i<bad_words.length;i++)
- {
-  var val=bad_words[i];
-  if((check_text.toLowerCase()).indexOf(val.toString())>-1)
-  {
-   error=error+1;
-  }
- }
-	
- if(error>0)
- {
-  alert("Some Bad Words In Your Text!");
-  window.stop();
- }
-}
-</script>
-
-
 </html>
 <?php ob_end_flush(); ?>
