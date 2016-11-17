@@ -132,14 +132,14 @@
                 <div class="col-md-8">
                     <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0"width="642" height="443" src="https://maps.google.com/maps?hl=en&q=National College of Ireland, Mayor Street, IFSC, Dublin 1&ie=UTF8&t=roadmap&z=16&iwloc=B&output=embed"><div><small><a href="http://embedgooglemaps.com">embedgooglemaps.com</a></small></div><div><small><a href="http://buyproxies.io/">buy proxies</a></small></div></iframe>
                 </div>
-                    <div class="col-md-4">
-                        <p>Phone:
+                    <div class="col-md-4"><br><br><br><br><br><br>
+                        <p align=left>Phone:
                             <strong>123.456.7890</strong>
                         </p>
-                        <p>Email:
+                        <p align=lefts>Email:
                             <strong><a href="mailto:name@example.com">ClubsAndSocietiesNCI@gmail.com</a></strong>
                         </p>
-                        <p>Address:
+                        <p align=left>Address:
                             <strong>Mayor Street, IFSC Dublin 1</strong>
                         </p>
                     </div>
