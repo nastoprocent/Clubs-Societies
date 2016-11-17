@@ -10,8 +10,9 @@
 
 	if ( isset($_POST['btn-signup']) ) {
 		
+	
 		// clean user inputs to prevent sql injections (attacks)
-		$name = trim($_POST['name']);
+		$name = trim($_POST['name']);																				
 		$name = strip_tags($name);
 		$name = htmlspecialchars($name);
 		
@@ -19,10 +20,22 @@
 		$email = strip_tags($email);
 		$email = htmlspecialchars($email);
 		
+		$email2 = trim($_POST['email2']);
+		$email2 = strip_tags($email2);
+		$email2 = htmlspecialchars($email2);
+		
 		$pass = trim($_POST['pass']);
 		$pass = strip_tags($pass);
 		$pass = htmlspecialchars($pass);
 		
+		$pass2 = trim($_POST['pass2']);
+		$pass2 = strip_tags($pass2);
+		$pass2 = htmlspecialchars($pass2);
+		
+		$captcha = trim($_POST['captcha']);
+		$captcha = strip_tags($captcha);
+		$captcha = htmlspecialchars($captcha);
+
 		// basic name validation
 		if (empty($name)) {
 			$error = true;
@@ -51,6 +64,19 @@
 			}
 		}
 		
+		// confirming the match of emails
+			
+		if(empty($email2)){
+			$error = true;
+			$email2Error = "Please confirm your email.";
+		}else if($_POST['email']!= $_POST['email2'])
+		 {
+		    $error = true;
+		    $pass2Error = "Oops! Email's do not match! Try again.";
+		 }
+		
+		
+		
 		// password validation
 		if (empty($pass)){
 			$error = true;
@@ -59,9 +85,29 @@
 			$error = true;
 			$passError = "Password must have atleast 6 characters.";
 		}
+		// validating if the password match
+		if(empty($pass2)){
+			$error = true;
+			$pass2Error = "Please confirm your password.";
+		}else if($_POST['pass']!= $_POST['pass2'])
+		 {
+		    $error = true;
+		    $pass2Error = "Oops! Password's do not match! Try again.";
+		 }
 		
 		// password encrypt using SHA256();
 		$password = hash('sha256', $pass);
+		
+		// captcha for validation of user/robot
+		if(empty($captcha)){
+			$error = true;
+			$captchaErr = "Please write 3 black letteres from captcha.";
+		}
+		else if($_SESSION['captcha']!==$_POST['captcha'])
+			{
+				$error = true;
+				$captchaErr = "Incorrect Captcha, Please try again.";
+			}
 		
 		// if there's no error, continue to signup
 		if( !$error ) {
@@ -74,7 +120,10 @@
 				$errMSG = "Successfully registered, you may login now";
 				unset($name);
 				unset($email);
+				unset($email2);
 				unset($pass);
+				unset($pass2);
+				unset($captcha);
 			} else {
 				$errTyp = "danger";
 				$errMSG = "Something went wrong, try again later...";	
@@ -124,29 +173,56 @@
 			}
 			?>
             
+            
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-            	<input type="text" name="name" class="form-control" placeholder="Enter Your Name Only" maxlength="50" value="" />
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+	            	<input type="text" name="name" class="form-control" placeholder="Enter Your Name Only" maxlength="50" value="" />
                 </div>
                 <span class="text-danger"><?php echo $nameError; ?></span>
             </div>
             
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
-            	<input type="email" name="email" class="form-control" placeholder="Enter Your Student Email" maxlength="40" value="" />
+              		<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+            		<input type="email" name="email" class="form-control" placeholder="Enter Your Student Email" maxlength="40" value="" />
                 </div>
                 <span class="text-danger"><?php echo $emailError; ?></span>
             </div>
             
             <div class="form-group">
             	<div class="input-group">
-                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
-            	<input type="password" name="pass" class="form-control" placeholder="Chouse Your Password." maxlength="15" />
+              		<span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+            		<input type="email" name="email2" class="form-control" placeholder="Re-Enter Your Student Email" maxlength="40" value="" />
                 </div>
+                <span class="text-danger"><?php echo $email2Error; ?></span>
+            </div>
+            
+            <div class="form-group">
+            	<div class="input-group">
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+	            	<input type="password" name="pass" class="form-control" placeholder="Chouse Your Password." maxlength="15" />
+	            </div>
                 <span class="text-danger"><?php echo $passError; ?></span>
             </div>
+            
+            <div class="form-group">
+            	<div class="input-group">
+	                <span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+	            	<input type="password" name="pass2" class="form-control" placeholder="Confirm your password." maxlength="15" />
+	            </div>
+                <span class="text-danger"><?php echo $pass2Error; ?></span>
+            </div>
+            
+            <div class="form-group">
+            	<center><text>Enter only the 3 </text><b>Black</b><text> characters from Captcha: </text></center>
+				<div class="input-group" align="center">
+					<span class="input-group-addon"><span class="glyphicon glyphicon-lock"></span></span>
+					<img src="captcha.php" alt="captcha image" id="captcha" width="380px" height="80px"><br />
+					<input type="text" id="captcha" class="form-control" name="captcha" size="6" maxlength="3">
+				</div>
+				<span class="text-danger"><?php echo $captchaErr?></span>
+			</div>
             
             <div class="form-group">
             	<hr />
