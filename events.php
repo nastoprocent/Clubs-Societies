@@ -37,10 +37,51 @@
      
     <!-- Top socs css --> 
     <style>
-    table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-    }
+        * {
+          box-sizing: border-box;
+        }
+        
+        #myInput {
+          background-image: url('/css/searchicon.png');
+          background-position: 10px 10px;
+          background-repeat: no-repeat;
+          width: 100%;
+          font-size: 16px;
+          padding: 12px 20px 12px 40px;
+          border: 1px solid #ddd;
+          margin-bottom: 12px;
+        }
+        
+        #myTable {
+          border-collapse: collapse;
+          width: 90%;
+          border: 1px solid #ddd;
+          font-size: 18px;
+
+          
+        }
+        
+        #myTable th, #myTable td {
+          text-align: left;
+          padding: 12px;
+          overflow: auto;
+        }
+        
+        #myTable tr {
+          border-bottom: 1px solid #ddd;
+          overflow: auto;
+        }
+        
+        #myTable tr.header, #myTable tr:hover {
+          background-color: #f1f1f1;
+          overflow:auto;
+        }
+        
+        div.scroll {
+        width: 350px;
+        height: 420px;
+        overflow: scroll;
+        }
     </style>
 </head>
 
@@ -131,7 +172,6 @@
                 </div>
             </div>
         </div>
-
     <div class="row">
             <div class="box">
                 <div class="col-lg-12">
@@ -141,29 +181,99 @@
                     </h2>
                     <hr>
                 </div>
-                <div id="calendar_div">
-                	<?php echo getCalender(); ?>
+                <div class="col-md-8">
+                    <div id="calendar_div">
+                	    <?php echo getCalender(); ?>
+                    </div>
                 </div>
-                
-                <div class="col-lg-12">
-                <table style="width:50%" align="center">
-                 <tr>
-                 <td><b>Top Societies</td></b>
-                 </tr>
-                  <tr>
-                    <td>Pool Society</td>
-                  </tr>
-                  <tr>
-                    <td>Gaming Society</td>
-                  </tr>
-                  <tr>
-                    <td>Music Society</td>
-                  </tr>
-                </table
-                </div>
-                
+                    <div class="col-md-4">
+                            <h2> Clubs & Socs Lists</h2>
+                            <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+                             <div class="scroll">
+                            <table id="myTable">
+                              <tr class="header">
+                                <th style="width:60%;">Clubs</th>
+                                <th style="width:40%;">Socs</th>
+                              </tr>
+                              <tr>
+                                <td>Badminton</td>
+                                <td>Music</td>
+                              </tr>
+                              <tr>
+                                <td>Baketball</td>
+                                <td>Art</td>
+                              </tr>
+                              <tr>
+                                <td>Chess</td>
+                                <td>Gaming</td>
+                              </tr>
+                              <tr>
+                                <td>Gaelic Football</td>
+                                <td>Fashion</td>
+                              </tr>
+                              <tr>
+                                <td>Golf</td>
+                                <td>Dance</td>
+                              </tr>
+                              <tr>
+                                <td>Hurling</td>
+                                <td>Computing</td>
+                              </tr>
+                              <tr>
+                                <td>Pool and Snooker</td>
+                                <td>Christian Union</td>
+                              </tr>
+                               </tr>
+                              <tr>
+                                <td>Hockey</td>
+                                <td>Comdedy</td>
+                              </tr>
+                               </tr>
+                              <tr>
+                                <td>Karting</td>
+                                <td>Darts</td>
+                              </tr>
+                               </tr>
+                              <tr>
+                                <td>Soccer</td>
+                                <td>Fantasy Football</td>
+                              </tr>
+                              <tr>
+                                <td>Table Tennis</td>
+                                <td>Peer Mentor</td>
+                              </tr>
+                              <tr>
+                                <td>Tennis</td>
+                                <td>Reachout</td>
+                              </tr>
+                              <tr>
+                                <td>Unlimate Frisbee</td>
+                                <td>Xbox</td>
+                              </tr>
+                            </table>
+                            
+                            <script>
+                                    function myFunction() {
+                                      var input, filter, table, tr, td, i;
+                                      input = document.getElementById("myInput");
+                                      filter = input.value.toUpperCase();
+                                      table = document.getElementById("myTable");
+                                      tr = table.getElementsByTagName("tr");
+                                      for (i = 0; i < tr.length; i++) {
+                                        td = tr[i].getElementsByTagName("td")[0];
+                                        if (td) {
+                                          if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                                            tr[i].style.display = "";
+                                          } else {
+                                            tr[i].style.display = "none";
+                                          }
+                                        }
+                                      }
+                                    }
+                        </script>
+                    </div>
+                    </div>
                 <div class="clearfix"></div>
-         	   	</div>
         	</div>
  		</div>
 	</div>
