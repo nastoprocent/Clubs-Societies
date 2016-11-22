@@ -193,9 +193,9 @@
 				<div class="elements" id="one2">
 					<ul>
 					 </br>
-					 	<li><strong>Co-President:</strong> </li></br>
-						<li><strong>Vice President:</strong> </li></br>
-						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
+					 	<li><strong>President: Cillian John Murray</strong> </li></br>
+						<li><strong>Vice President: Jim Maguire</strong> </li></br>
+						<li><strong>Creator of FB-Fanpage: Cillian John Murray</strong> </li></br>
 					</ul>
 				</div>
 		</div>
@@ -239,7 +239,7 @@
 				<div class="elements" id="one3">
 					<ul>
 					 </br>
-					 	<li><strong>Co-President:</strong> </li></br>
+					 	<li><strong>President:</strong> </li></br>
 						<li><strong>Vice President:</strong> </li></br>
 						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
 					</ul>
@@ -277,8 +277,8 @@
 				</div>
 				<div class="elements" id="one4">
 					<ul>
-					 </br><li><strong>Co-President:</strong> Josephine Andrews</li></br>
-						<li><strong>Vice President:</strong> Cillian John Murray</li></br>
+					 </br><li><strong>Co-President:</strong> Cillian John Murray</li></br>
+						<li><strong>Vice President:</strong> Jim Maguire</li></br>
 						<li><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</li></br>
 					</ul>
 				</div>

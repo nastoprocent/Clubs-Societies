@@ -405,8 +405,8 @@
                     url: "shoutmusic.php",
                     data: data,
                     success: function(html){ // this happen after we get result
-                        $("#shout").slideToggle(600, function(){
-                            $(this).html(html).slideToggle(600);
+                        $("#shout").slideToggle(0, function(){
+                            $(this).html(html).slideToggle(0);
                             $("#message").val("");
                         });
                   }
