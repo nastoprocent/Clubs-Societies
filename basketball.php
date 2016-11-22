@@ -361,7 +361,7 @@
                 <div class="col-lf-12">
                     <div id="page">
                         <div class="border rounded">
-                            <shoutboxheading>Gaming Society Shoutbox</shoutboxheading>
+                            <shoutboxheading>Basketball Society Shoutbox</shoutboxheading>
                         </div>
                         <div class="border_main rounded">
                                 <form method="post" action="shoutgaming.php" id="shoutboxform">
@@ -434,11 +434,11 @@
                 <form name="myform" method="post" action="basketball.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="John Smith" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name"  value="<?php echo $userRow['userName']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="abc@example.com"  value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" value="<?php echo $userRow['userEmail']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>

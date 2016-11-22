@@ -53,7 +53,17 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li><a href="index.php">Home</a></li>
-            		<li><a class="page-scroll" href="clubsoc.php">Clubs&Socs</a></li>
+            		<li>
+            			<div class="dropdown">
+						  <button class="dropbtn"><a class="page-scroll" href="clubsoc.php">Clubs&Socs</a></button>
+						  <div class="dropdown-content">
+						    <a href="basketball.php">Basketball</a>
+						    <a href="music.php">Music</a>
+						    <a href="pool.php">Pool</a>
+						    <a href="gaming.php">Gaming</a>
+						  </div>
+						</div>
+            		</li>
                     <li><a href="events.php">Events</a></li>
                     <li><a href="contactus.php">Contact Us</a></li>
                     <li><div id="box"><form action="search.php" method="post" onclick="ScrollToBottom()">
