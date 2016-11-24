@@ -259,9 +259,13 @@
      	<div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                    <audio autoplay>
+                    <audio id="myAudio" autoplay>
                         <source src="NCI.mp3" type="audio/mpeg">
                     </audio>
+                    <script>
+                    var x = document.getElementById("myAudio").volume = 0.2;
+                    </script>
+                    
                     <hr>
                             <h2 class="brand-before">
                             <small>Welcome to</small>
@@ -420,7 +424,7 @@
             
             $.ajax({
                     type: "POST",
-                    url: "shoutusic.php",
+                    url: "shoutmusic.php",
                     data: data,
                     success: function(html){ // this happen after we get result
                         $("#shout").html(html);

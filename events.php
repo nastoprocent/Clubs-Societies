@@ -26,23 +26,22 @@
 
     <title>Clubs and Societies</title>
 
-    <!-- Bootstrap Core CSS -->
     <link href="css/events/Eventsbootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="css/events/Eventsbusiness-casual.css" rel="stylesheet">
-	<link href="css/events/Eventsstyle.css" rel="stylesheet">
-	
-	
+  	<link href="css/events/Eventsstyle.css" rel="stylesheet">
+  	 
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/addingajax.js"></script>
     <script src="js/jquery.min.js"></script>
      
-    <!-- Top socs css --> 
     <style>
         * {
           box-sizing: border-box;
         }
         
         #myInput {
-          background-image: url('/css/searchicon.png');
+          background-image: url('../../img/events/searchicon.png');
           background-position: 10px 10px;
           background-repeat: no-repeat;
           width: 100%;
@@ -313,17 +312,6 @@
            
         </div>
 </footer>
-
-        <!-- jQuery -->
-        <script src="js/jquery.js"></script>
-
-        <!-- Bootstrap Core JavaScript -->
-        <script src="js/bootstrap.min.js"></script>
-
-         <!-- Ajax & JavaScript for recipes -->
-    	<script type="text/javascript" src="js/addingajax.js"></script>
-		<script type="text/javascript" src="js/acc.js"></script>
-
 </body>
 
 </html>
