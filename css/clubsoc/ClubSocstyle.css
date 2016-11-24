@@ -236,7 +236,6 @@ input[type=text] {
 .dropdown {
     position: relative;
     display: inline-block;
-    padding-top: 18px;
 }
 
 .dropdown-content {

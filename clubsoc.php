@@ -36,44 +36,35 @@
 <body>
     
     <!-- Navigation menu -->
-    
-	<nav class="navbar navbar-default" role="navigation">
-        <div class="container">
-            
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.php">Clubs & Socs</a>
-            </div>
-            
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li><a href="index.php">Home</a></li>
-            		<li>
-            			<div class="dropdown">
-						  <button class="dropbtn"><a class="page-scroll" href="clubsoc.php">Clubs&Socs</a></button>
-						  <div class="dropdown-content">
-						    <a href="basketball.php">Basketball</a>
-						    <a href="music.php">Music</a>
-						    <a href="pool.php">Pool</a>
-						    <a href="gaming.php">Gaming</a>
-						  </div>
-						</div>
-            		</li>
-                    <li><a href="events.php">Events</a></li>
-                    <li><a href="contactus.php">Contact Us</a></li>
-                    <li><div id="box"><form action="search.php" method="post" onclick="ScrollToBottom()">
+            <nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+			    <div>
+			      <ul class="nav navbar-nav">
+			        <li><a href="home.php">Home</a></li>
+			        <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="clubsoc">Clubs&Socs
+			          <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			          	<br>
+			            <li><a href="basketball.php">Basketball</a></li>
+			            <hr>
+			            <li><a href="pool.php">Pool</a></li>
+			            <hr>
+			            <li><a href="gaming.php">Gaming</a></li>
+			            <hr>
+			            <li><a href="music.php">Music</a></li>
+			            <br>
+			          </ul>
+			        </li>
+			        <li><a href="events.php">Events</a></li> 
+			        <li><a href="contactus.php">Contact Us</a></li>
+			        <li><div id="box"><form action="search.php" method="post" onclick="ScrollToBottom()">
            			<input type="text" name="search" id="searchBox" maxlength="25" autocomplete="on" placeholder="Search..."/></form></div></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    
-    <!-- Navigation menu -->
+			      </ul>
+			    </div>
+			  </div>
+			</nav>
+    <!-- Navigation menu -->        
     
    <div class="container">
      	<div class="row">
