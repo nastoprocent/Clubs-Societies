@@ -101,7 +101,21 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a class="page-scroll" href="index.php">Home</a></li>
-            <li><a class="page-scroll" href="clubsoc.php">Clubs&Socs</a></li>
+             <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="clubsoc">Clubs&Socs
+			          <span class="caret"></span></a>
+			          <ul class="dropdown-menu">
+			          	<br>
+			            <li><a href="basketball.php">Basketball</a></li>
+			            <hr>
+			            <li><a href="pool.php">Pool</a></li>
+			            <hr>
+			            <li><a href="gaming.php">Gaming</a></li>
+			            <hr>
+			            <li><a href="music.php">Music</a></li>
+			            <br>
+			          </ul>
+			        </li>
             <li><a class="page-scroll" href="events.php">Events</a></li>
             <li><a class="page-scroll" href="contactus.php">Contact Us</a> </li>
           
