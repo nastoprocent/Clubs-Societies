@@ -8,7 +8,7 @@ $username = 'root';
 /*** mysql password ***/
 $password = '';
 
-$dbname = 'clubsandsocs';
+$dbname = 'phpmyadmin';
 
 try {
     $dbh = new PDO("mysql:host=$hostname;dbname=$dbname", $username, $password);

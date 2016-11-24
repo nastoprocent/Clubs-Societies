@@ -15,7 +15,7 @@
 <?php
 
     mysql_connect("localhost", "root", "") or die ("Could not connect");
-    mysql_select_db("clubsandsocs") or die("Could not find database");
+    mysql_select_db("phpmyadmin") or die("Could not find database");
     $output = '';
     
     if(isset($_POST['search'])){
