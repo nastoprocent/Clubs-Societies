@@ -128,6 +128,8 @@
                 </div>
 	
     <div class="col-sm-4 text-center">
+    	<!-- Societies and Clubs 1 -->
+
 	    <div id="img">
     		<div class="hovereffect">
     			<img class="img-responsive" src="img/clubsoc/basketball.jpg" alt="Society or Club" border="5">
@@ -204,14 +206,52 @@
 			</br>
 			</br>
 			</br>
+		<!-- Societies and Clubs 2 -->
+		<!-- Societies and Clubs 3 -->
+		<div id="img">
+    		<div class="hovereffect">
+    			<img class="img-responsive" src="img/clubsoc/basketball.jpg" alt="Society or Club" border="5">
+    			<div class="overlay">
+         			<h2>Basketball Club</h2>
+        			<a class="info" href="basketball.php">Find out More</a>
+    			</div>
+    		</div>
+    	</div>
+    	
+		<div class="food">
+			<div class="thelabel" id="thelabel3">
+				<div id="one3plus" class="control">
+					<a href="#name" onclick="expand('one3');return false">▼</a>
+				</div>
+				<div id="one3negative" class="control">
+					<a href="#name" onclick="collapse('one3');return false">▲</a>
+				</div>
+				<h3 class="name">
+				<a href="basketball.php" target="_blank">BASEKETBALL CLUB</a>
+				</h3>
+			</div>
+			<div class="elements" id="one3">
+				<ul>
+					 </br>
+					 	<li><strong>Co-President:</strong> </li></br>
+						<li><strong>Vice President:</strong> </li></br>
+						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
+					</ul>
+			</div>
+
+		</div>
+			</br>
+			</br>
+			</br>
+			
 	</div>
-	<!-- Societies and Clubs list 2 -->
+	<!-- Societies and Clubs 3 -->
 
 
 
 
 
-	<!-- Societies and Clubs list 3 -->
+	<!-- Societies and Clubs list 4 -->
 	<div class="col-sm-4 text-center">
 		
 		<div id="img">
@@ -225,19 +265,19 @@
     	</div>
     	
 		<div class="food">
-				<div class="thelabel" id="thelabel3">
-					<div id="one3plus" class="control">
-					<a href="#name" onclick="expand('one3');return false">▼</a>
+				<div class="thelabel" id="thelabel4">
+					<div id="one4plus" class="control">
+					<a href="#name" onclick="expand('one4');return false">▼</a>
 					</div>
-					<div id="one3negative" class="control">
-					<a href="#name" onclick="collapse('one3');return false">▲</a>
+					<div id="one4negative" class="control">
+					<a href="#name" onclick="collapse('one4');return false">▲</a>
 					</div>
 
 					<h3 class="name">
 					<a href="music.php" target="_blank">Music Society</a>
 					</h3>
 				</div>
-				<div class="elements" id="one3">
+				<div class="elements" id="one4">
 					<ul>
 					 </br>
 					 	<li><strong>President:</strong> </li></br>
@@ -249,9 +289,9 @@
 			</br>
 			</br>
 			</br>
-		<!-- Societies and Clubs list 3 -->
+		<!-- Societies and Clubs list 4 -->
 
-	<!-- Societies and Clubs list 4 -->
+	<!-- Societies and Clubs list 5 -->
 	
 		
 				<div id="img">
@@ -263,20 +303,20 @@
 		    			</div>
 		    		</div>
 		    	</div>
-    	
+    	<div class="food">
 				<div class="thelabel" id="thelabel4">
-					<div id="one4plus" class="control">
-					<a href="#name" onclick="expand('one4');return false">▼</a>
+					<div id="one5plus" class="control">
+					<a href="#name" onclick="expand('one5');return false">▼</a>
 					</div>
-					<div id="one4negative" class="control">
-					<a href="#name" onclick="collapse('one4');return false">▲</a>
+					<div id="one5negative" class="control">
+					<a href="#name" onclick="collapse('one5');return false">▲</a>
 					</div>
 					
 					<h3 class="name">
 					<a href="gaming.php" target="_blank">Gaming Society</a>
 					</h3>
 				</div>
-				<div class="elements" id="one4">
+				<div class="elements" id="one5">
 					<ul>
 					 </br><li><strong>Co-President:</strong> Cillian John Murray</li></br>
 						<li><strong>Vice President:</strong> Jim Maguire</li></br>
@@ -287,8 +327,47 @@
 			</br>
 			</br>
 			</br>
+			<!-- Societies and Clubs list 5 -->
+			<!-- Societies and Clubs list 6 -->
+				<div id="img">
+		    		<div class="hovereffect">
+		    			<img class="img-responsive" src="img/clubsoc/netSocs.jpg" alt="Society or Club" border="5">
+		    			<div class="overlay">
+		         			<h2>NCI NET Society</h2>
+		        			<a class="info" href="netSoc.php">Find out More</a>
+		    			</div>
+		    		</div>
+		    	</div>
+    	<div class="food">
+				<div class="thelabel" id="thelabel4">
+					<div id="one6plus" class="control">
+					<a href="#name" onclick="expand('one6');return false">▼</a>
+					</div>
+					<div id="one6negative" class="control">
+					<a href="#name" onclick="collapse('one6');return false">▲</a>
+					</div>
+					
+					<h3 class="name">
+					<a href="netSoc.php" target="_blank">NCI NET Society</a>
+					</h3>
+				</div>
+				<div class="elements" id="one6">
+					<ul>
+					 </br><li><strong>Co-President:</strong> Cillian John Murray</li></br>
+						<li><strong>Vice President:</strong> Jim Maguire</li></br>
+						<li><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</li></br>
+					</ul>
+				</div>
+		</div>
+			</br>
+			</br>
+			</br>
+			<!-- Societies and Clubs list 6 -->
+	</div>
+			
+			
     </div>
-    <!-- Societies and Clubs list 4 -->
+    
 
                 <div class="clearfix"></div>
 

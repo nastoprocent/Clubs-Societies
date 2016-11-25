@@ -113,11 +113,12 @@
     }
     if($valid==4)
     {
-    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Music', '".$_POST['dateofbirth']."')");
+    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Gaming', '".$_POST['dateofbirth']."')");
     $conn->close();
 
     }
     ?>
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -129,28 +130,32 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Music</title>
+    <title>Gaming</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/music/Musicbootstrap.min.css" rel="stylesheet">
-    <link href="css/music/Musicbusiness-casual.css" rel="stylesheet">
-    <link href="css/music/Musicslideshow.css" rel="stylesheet">
+    <link href="css/gaming/Gamingbootstrap.min.css" rel="stylesheet">
+    <link href="css/gaming/Gamingbusiness-casual.css" rel="stylesheet">
+    <link href="css/gaming/Gamingslideshow.css" rel="stylesheet">
     <link href="css/music/facebookfloating.css" rel="stylesheet">
-    <link href="css/music/Musicshoutbox.css" rel="stylesheet">
+    <link href="css/gaming/Gamingshoutbox.css" rel="stylesheet">
     
     <script src="js/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
     <script src="js/jquery-1.11.3.min.js" type="text/javascript"></script>
     <script src="js/jssor.slider-21.1.6.mini.js" type="text/javascript"></script>
     <script src="js/floatingfacebook.js"></script>
 	<script>jQuery.noConflict();</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
 
 </head>
 
 
 
-<body> 
-
-<script type="text/javascript">
+<body>
+    
+    <script type="text/javascript">
         jQuery(document).ready(function ($) {
 
             var jssor_1_SlideshowTransitions = [
@@ -188,7 +193,7 @@
             function ScaleSlider() {
                 var refSize = jssor_1_slider.$Elmt.parentNode.clientWidth;
                 if (refSize) {
-                    refSize = Math.min(refSize, 1050);
+                    refSize = Math.min(refSize, 1100);
                     jssor_1_slider.$ScaleWidth(refSize);
                 }
                 else {
@@ -203,6 +208,7 @@
         });
     </script>
     
+    
     <div class="mtwlikebox" style=""> 
     <script type="text/javascript"> 
     
@@ -215,12 +221,11 @@
     }, 500);});
     
     </script>   
- <div>    
- <iframe src="https://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Ffacebook.com%2FNciMusicSoc&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: white; overflow: hidden; height: 270px; width: 245px;background:#fafafa;"></iframe>
- <span>Widget by :<a href="http://ncirl.ie"> Nci</a></span></div></div>
+     <div>    
+     <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fclubsandsocs&amp;width=245&amp;colorscheme=light&amp;show_faces=true&amp;border_color=white&amp;connections=9&amp;stream=false&amp;header=false&amp;height=270" scrolling="no" frameborder="0" scrolling="no" style="border: white; overflow: hidden; height: 270px; width: 245px;background:#fafafa;"></iframe>
+     <span>Widget by :<a href="http://ncirl.ie"> Nci</a></span></div></div>
 
-    
-    
+
      <!-- Navigation menu -->
     
 	<nav class="navbar navbar-default" role="navigation">
@@ -237,8 +242,8 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
             <li><a class="page-scroll" href="index.php">Home</a></li>
-           <li class="dropdown">
-			          <a class="dropdown-toggle" data-toggle="dropdown" href="music">Music
+            <li class="dropdown">
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="gaming">NCI NETSOC
 			          <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			          	<br>
@@ -246,9 +251,12 @@
 			            <hr>
 			            <li><a href="pool.php">Pool</a></li>
 			            <hr>
-			            <li><a href="gaming.php">Gaming</a></li>
-			            <hr>
 			            <li><a href="basketball.php">Basketball</a></li>
+			            <hr>
+			            <li><a href="music.php">Music</a></li>
+			             <hr>
+			            <li><a href="netSoc.php">NCI NETSOC</a></li>
+			            <hr>
 			            <br>
 			          </ul>
 			        </li>
@@ -273,41 +281,35 @@
      	<div class="row">
             <div class="box">
                 <div class="col-lg-12 text-center">
-                    <audio id="myAudio" autoplay>
-                        <source src="NCI.mp3" type="audio/mpeg">
-                    </audio>
-                    <script>
-                    var x = document.getElementById("myAudio").volume = 0.1;
-                    </script>
-                    
                     <hr>
                             <h2 class="brand-before">
-                            <small>Welcome to</small>
+                                <small>Welcome to</small>
                             </h2>
-                            <h1 class="brand-name"> Music Society</h1>
+        
+                            <h1 class="brand-name"> NCI NET Society</h1>
                             <hr class="tagline-divider">
-<br />
+                    <br />
                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('img/music/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                            <div style="position:absolute;display:block;background:url('img/gaming/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                         </div>
                         
                         
                         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
                             <div data-p="112.50">
-                                <img data-u="image" src="img/music/musicslide2.jpg" />
+                                <img data-u="image" src="img/gaming/gamingSlide1.jpg" />
                             </div>
                             <a data-u="any" href="http://www.jssor.com" style="display:none">Banner Rotator</a>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/music/musicslide1.jpg" />
+                                <img data-u="image" src="img/gaming/gamingSlide2.jpg" />
                             </div>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/music/musicslide3.jpg" />
+                                <img data-u="image" src="img/gaming/gamingSlide3.jpg" />
                             </div>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/music/musicslide4.jpg"  />
+                                <img data-u="image" src="img/gaming/gamingSlide4.jpg"  />
                             </div>
                         </div>
                         <!-- Bullet Navigator -->
@@ -329,22 +331,17 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8"><br />
-                        <img class="img-responsive img-rounded" src="img/music/music.jpg" alt="">
+                        <img class="img-responsive img-rounded" src="img/net/netSoc.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <hr>
-                        <h1> Music Society</h1>
+                        <h1>NCI NET Society</h1>
                         <hr>
-                        <p> Welcome to NCI Music Society page (formerly known as Voices of NCI!) 
+                        <p>Welcome to the NCI Gaming Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
 
-                            This is going to be the best EVER for culture and music appreciation in the college. 
-
-                            Hope you will join with us for the fun filled events ahead!
+                            Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
                             
-                           NCI music society will be hosting a variety of events throughout the year for people who play or enjoy listening to music!
-                           
-                           Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
-                        </p>
+                            If you post any form of spam on this page I will unleash my angry ban hammer and it upsets our team greatly. </p>
                     </div>
                 </div>
             </div>
@@ -357,8 +354,7 @@
                         <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
                         <br /><br />
                         <hr>
-                        <p><strong>Co-President:</strong> Josephine Andrews</p>
-                        <p><strong>Email:</strong> Josephine_Andrews@gmail.com</p>
+                        <p><strong>Co-President:</strong> Cillian John Murray</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
@@ -366,7 +362,6 @@
                         <br /><br />
                         <hr>
                         <p><strong>Vice President:</strong> Cillian John Murray</p>
-                         <p><strong>Email:</strong> Cillian.murray@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
@@ -374,21 +369,18 @@
                         <br /><br />
                         <hr>
                         <p><strong>Creator of Fanpage: </strong>Ben Kibabu</p>
-                         <p><strong>Email:</strong> Benkibabu@gmail.com</p>
                         <hr>
                     </div>
                 </div>
             </div>
         
-        <!-- Content Row -->
-        
-         <!-- Content Row -->
-         <div class="row">
+       <!-- Content Row -->
+        <div class="row">
             <div class="box">
                 <div class="col-lf-12">
                     <div id="page">
                         <div class="border rounded">
-                            <shoutboxheading>Music Society Shoutbox</shoutboxheading>
+                            <shoutboxheading> NCI NET Society Shoutbox</shoutboxheading>
                         </div>
                         <div class="border_main rounded">
                                 <form method="post" action="shoutgaming.php" id="shoutboxform">
@@ -420,7 +412,7 @@
                 // ajax call
                 $.ajax({
                     type: "POST",
-                    url: "shoutmusic.php",
+                    url: "shoutgaming.php",
                     data: data,
                     success: function(html){ // this happen after we get result
                         $("#shout").slideToggle(0, function(){
@@ -438,7 +430,7 @@
             
             $.ajax({
                     type: "POST",
-                    url: "shoutmusic.php",
+                    url: "shoutgaming.php",
                     data: data,
                     success: function(html){ // this happen after we get result
                         $("#shout").html(html);
@@ -449,16 +441,19 @@
         
         </script>
         
-    <div class="row">
+                
+        <!-- Content Row -->
+        
+    	<div class="row">
             <div class="box" align="center">
                 <hr>
                     <h2 class="intro-text text-center">
                         <strong>Sign Up</strong>
                     </h2>
                     <hr>
-                    <p><h6><center> Please fill in the form if you want to sign up for Music Society</center></h6></p>
+                    <p><h6><center> Please fill in the form if you want to sign up for Gaming Society</center></h6></p>
                     <br />
-                <form name="myform" method="post" action="music.php" onSubmit="alert('Thank you for your application!!!!');">
+                <form name="myform" method="post" action="gaming.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
                         <input type="text" class="form-control" name="name" placeholder="John Smith" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
@@ -473,7 +468,7 @@
                     </div>
                     <div class="form-group">
                         <label for="society">Society</label>
-                        <input type="text" class="form-control" name="society"  placeholder="Music" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="society"  placeholder="Gaming" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
@@ -484,19 +479,13 @@
                     
                         <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
                 </form>
+                    
            </div>
     	</div>
     </div>
     <!-- /.container -->
 
     
-
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
     <!-- Script to Activate the Carousel -->
     <script>
     $('.carousel').carousel({
@@ -505,17 +494,17 @@
     </script>
 	
 	
-   <footer>
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <div class="add">
-						<a href="https://www.facebook.com/NciMusicSoc/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+                    <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+                     <div class="add">
+						<a href="https://www.facebook.com/groups/NCIGAMINGSOC/"><img src="img//facebook.jpg" alt="" /></a>
 						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
 						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
 						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					 </div>
-                    <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+					</div>
                 </div>
             </div>
         </div>

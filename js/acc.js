@@ -24,11 +24,16 @@ aaManageEvent(window,"load", function() {
    setHeight('one2');
    setHeight('one3');
    setHeight('one4');
+   setHeight('one5');
+   setHeight('one6');
 
    document.getElementById('oneplus').style.display='block';
    document.getElementById('one2plus').style.display='block';
    document.getElementById('one3plus').style.display='block';
    document.getElementById('one4plus').style.display='block';
+   document.getElementById('one5plus').style.display='block';
+   document.getElementById('one6plus').style.display='block';
+
 
 });
 
