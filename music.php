@@ -248,7 +248,7 @@
 			            <hr>
 			            <li><a href="gaming.php">Gaming</a></li>
 			            <hr>
-			            <li><a href="music.php">Music</a></li>
+			            <li><a href="clubsoc.php">Clubs and Socs</a></li>
 			            <hr>
 			            <li><a href="netSoc.php">NCI NETSOC</a></li>
 			            <hr>
@@ -466,7 +466,7 @@
                     </div>
                     <div class="form-group">
                         <label for="society">Society</label>
-                        <input type="text" class="form-control" name="society"  placeholder="BasketBall" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="society"  placeholder="Music" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>

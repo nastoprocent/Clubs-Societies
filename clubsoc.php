@@ -335,7 +335,7 @@
 			<!-- Societies and Clubs list 6 -->
 				<div id="img">
 		    		<div class="hovereffect">
-		    			<img class="img-responsive" src="img/clubsoc/Net.jpg" alt="Society or Club" border="5">
+		    			<img class="img-responsive" src="img/net/netSocs.jpg" alt="Society or Club" border="5">
 		    			<div class="overlay">
 		         			<h2>NCI NET Society</h2>
 		        			<a class="info" href="netSoc.php">Find out More</a>

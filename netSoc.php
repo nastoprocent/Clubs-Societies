@@ -113,7 +113,7 @@
     }
     if($valid==4)
     {
-    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Gaming', '".$_POST['dateofbirth']."')");
+    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Net Soc', '".$_POST['dateofbirth']."')");
     $conn->close();
 
     }
@@ -243,7 +243,7 @@
           <ul class="nav navbar-nav">
             <li><a class="page-scroll" href="index.php">Home</a></li>
             <li class="dropdown">
-			          <a class="dropdown-toggle" data-toggle="dropdown" href="gaming">NCI NETSOC
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="netSoc">NCI NETSOC
 			          <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			          	<br>
@@ -253,11 +253,11 @@
 			            <hr>
 			            <li><a href="basketball.php">Basketball</a></li>
 			            <hr>
+			            <li><a href="gaming.php">Gaming</a></li>
+			            <hr>
 			            <li><a href="music.php">Music</a></li>
 			            <hr>
-			            <li><a href="netSoc.php">NCINET </a></li>
-			            <hr>
-			            <li><a href="Anime.php">Anime and Manga </a></li>
+			            <li><a href="Amine.php">Amine </a></li>
 			            <br>
 			          </ul>
 			        </li>
