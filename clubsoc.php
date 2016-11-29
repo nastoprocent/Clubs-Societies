@@ -53,6 +53,10 @@
 			            <li><a href="gaming.php">Gaming</a></li>
 			            <hr>
 			            <li><a href="music.php">Music</a></li>
+			            <hr>
+			            <li><a href="netSoc.php">NCI NETSOC</a></li>
+			            <hr>
+			            <li><a href="Anime.php">Anime and Manga</a></li>
 			            <br>
 			          </ul>
 			        </li>
@@ -210,10 +214,10 @@
 		<!-- Societies and Clubs 3 -->
 		<div id="img">
     		<div class="hovereffect">
-    			<img class="img-responsive" src="img/clubsoc/basketball.jpg" alt="Society or Club" border="5">
+    			<img class="img-responsive" src="img/clubsoc/anime.jpg" alt="Society or Club" border="5">
     			<div class="overlay">
-         			<h2>Basketball Club</h2>
-        			<a class="info" href="basketball.php">Find out More</a>
+         			<h2> Anime and Manga </h2>
+        			<a class="info" href="Anime.php">Find out More</a>
     			</div>
     		</div>
     	</div>
@@ -227,7 +231,7 @@
 					<a href="#name" onclick="collapse('one3');return false">▲</a>
 				</div>
 				<h3 class="name">
-				<a href="basketball.php" target="_blank">BASEKETBALL CLUB</a>
+				<a href="basketball.php" target="_blank">Anime and Manga</a>
 				</h3>
 			</div>
 			<div class="elements" id="one3">
@@ -331,7 +335,7 @@
 			<!-- Societies and Clubs list 6 -->
 				<div id="img">
 		    		<div class="hovereffect">
-		    			<img class="img-responsive" src="img/clubsoc/netSocs.jpg" alt="Society or Club" border="5">
+		    			<img class="img-responsive" src="img/clubsoc/Net.jpg" alt="Society or Club" border="5">
 		    			<div class="overlay">
 		         			<h2>NCI NET Society</h2>
 		        			<a class="info" href="netSoc.php">Find out More</a>
@@ -378,21 +382,40 @@
 
     <!-- /.copy right/footer -->
 
-    <footer>
+   <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+              
+              
+                <div class="col-lg-4 text-left">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
-						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
-						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					</div>
+                 </div>
+                     <div class="add">
+                        <div class="col-lg-4 text-center">
+            						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+            						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+            						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+            						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					           </div>
                 </div>
-            </div>
+                
+			    	    <div class="col-lg-4 text-right">
+				          
+                      
+                          <p id="demo"></p>
+                          <script>
+                          var d = new Date();
+                          document.getElementById("demo").innerHTML = d.toString();
+                          </script>
+    				        </div>
+    			       
+				        </div>
+				        
+				        
+				        
+           
         </div>
-    </footer>
+	</footer>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>

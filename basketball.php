@@ -239,14 +239,19 @@
 			          <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			          	<br>
-			            <li><a href="clubsoc.php">Club&soc</a></li>
+			            <li><a href="basketball.php">Basketball</a></li>
 			            <hr>
 			            <li><a href="pool.php">Pool</a></li>
 			            <hr>
 			            <li><a href="gaming.php">Gaming</a></li>
 			            <hr>
 			            <li><a href="music.php">Music</a></li>
-			            <br>
+			            <hr>
+			            <li><a href="netSoc.php">NCI NETSOC</a></li>
+			            <hr>
+			            <li><a href="Anime.php">Anime and Manga</a></li>
+			            <hr>
+			            <li><a href="clubsoc.php">Clubs and Socs </a></li>
 			          </ul>
 			        </li>
             <li><a class="page-scroll" href="events.php">Events</a></li>
@@ -484,19 +489,28 @@
     </script>
 	
 	
-    <footer>
+   <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-4 text-left">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
-						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
-						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					</div>
+                 </div>
+                     <div class="add">
+                        <div class="col-lg-4 text-center">
+            				<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+            				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+            				<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+            				<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					    </div>
                 </div>
-            </div>
+			  <div class="col-lg-4 text-right">
+                    <p id="demo"></p>
+                    <script>
+                          var d = new Date();
+                          document.getElementById("demo").innerHTML = d.toString();
+                    </script>
+    		   </div>
+		    </div>
         </div>
 </footer>
     

@@ -1,0 +1,85 @@
+#page{
+	width:800px;
+	margin:20px auto;
+}
+
+.border{
+    background-color: #595959;
+    margin-bottom: 25px;
+    padding: 10px;
+    border: 8px solid black;
+    text-align: center;
+}
+
+.border_main {
+    background-color: #595959;
+    padding: 20px; 
+    border: 8px solid black;
+}
+
+.border_main p {
+    margin: 20px 0 20px 0;
+}
+
+shoutboxheading{
+	font-size:35px;
+	font-weight:700;
+	font-style:oblique;
+	position:relative;
+	color:white;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: normal;
+    color:black;
+}
+
+.rounded{
+	-moz-border-radius:12px;
+    -webkit-border-radius:12px;
+	border-radius:12px;
+}
+
+.border_footer {
+    float: right;
+    position: relative;
+    padding: 10px; 
+    margin-top: 20px;
+}
+shoutboxlabels{
+	font-size:15px;
+	font-weight:bold;
+	color: white;
+}
+#shout{
+    border:5px solid black;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:15px;
+}
+#submit{
+	border: 1px solid #000000;
+    font-size: 16px;
+    background: #f1d829;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    padding:5px;
+    padding-right:8px !important;
+}
+#shoutboxform{
+    border:5px solid black;
+    padding-top:5px;
+    padding-left:10px;
+    padding-bottom:10px;
+}
+
+design { list-style-type: none;}
+design li { padding: 10px 0 10px 0; border-bottom: 1px solid #eee;}
+.name { font-weight: bold; width: 100px; display: inline-block; color: #07d82d;}
+.date { color: #ccc; font-family: Arial; font-size: 14px; margin-right: 10px; float:right;}
+.message { font-style: italic; margin-left: 10px; padding:5px; color:#a5d3fb;}
+input { margin: 10px 5px 10px 5px; padding:5px;}
+.message { width: 300px; }

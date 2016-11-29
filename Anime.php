@@ -113,7 +113,7 @@
     }
     if($valid==4)
     {
-    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Gaming', '".$_POST['dateofbirth']."')");
+    $conn->query("INSERT INTO details (name, email, phone ,society,dateofbirth ) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','Anime', '".$_POST['dateofbirth']."')");
     $conn->close();
 
     }
@@ -130,14 +130,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>NETSOC</title>
+    <title>Anime and Manga</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/net/Netbootstrap.min.css" rel="stylesheet">
-    <link href="css/net/Netbusiness-casual.css" rel="stylesheet">
-    <link href="css/net/Netslideshow.css" rel="stylesheet">
-    <link href="css/net/facebookfloating.css" rel="stylesheet">
-    <link href="css/net/Netshoutbox.css" rel="stylesheet">
+    <link href="css/anime/Animebootstrap.min.css" rel="stylesheet">
+    <link href="css/anime/Animebusiness-casual.css" rel="stylesheet">
+    <link href="css/anime/Animeslideshow.css" rel="stylesheet">
+    <link href="css/anime/facebookfloating.css" rel="stylesheet">
+    <link href="css/anime/Animeshoutbox.css" rel="stylesheet">
     
     <script src="js/jquery.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
@@ -243,7 +243,7 @@
           <ul class="nav navbar-nav">
             <li><a class="page-scroll" href="index.php">Home</a></li>
             <li class="dropdown">
-			          <a class="dropdown-toggle" data-toggle="dropdown" href="gaming">NCI NETSOC
+			          <a class="dropdown-toggle" data-toggle="dropdown" href="Anime">Anime and Manga
 			          <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			          	<br>
@@ -257,7 +257,7 @@
 			            <hr>
 			            <li><a href="netSoc.php">NCINET </a></li>
 			            <hr>
-			            <li><a href="Anime.php">Anime and Manga </a></li>
+			            <li><a href="gaming.php">Gaming </a></li>
 			            <br>
 			          </ul>
 			        </li>
@@ -287,30 +287,30 @@
                                 <small>Welcome to</small>
                             </h2>
         
-                            <h1 class="brand-name"> NCI NET Society</h1>
+                            <h1 class="brand-name"> Anime and Manga Society</h1>
                             <hr class="tagline-divider">
                     <br />
                    <div id="jssor_1" style="position: relative; margin: 0 auto; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; visibility: hidden;">
                         <!-- Loading Screen -->
                         <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                             <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; top: 0px; left: 0px; width: 100%; height: 100%;"></div>
-                            <div style="position:absolute;display:block;background:url('img/net/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                            <div style="position:absolute;display:block;background:url('img/anime/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                         </div>
                         
                         
                         <div data-u="slides" style="cursor: default; position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden;">
                             <div data-p="112.50">
-                                <img data-u="image" src="img/net/netslideshow1.jpg" />
+                                <img data-u="image" src="img/anime/animeslideshow.jpg" />
                             </div>
                             <a data-u="any" href="http://www.jssor.com" style="display:none">Banner Rotator</a>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/net/netslideshow2.jpg" />
+                                <img data-u="image" src="img/anime/animeslideshow2.jpg" />
                             </div>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/net/netslideshow3.jpg" />
+                                <img data-u="image" src="img/anime/animeslideshow3.jpg" />
                             </div>
                             <div data-p="112.50" style="display: none;">
-                                <img data-u="image" src="img/net/net.jpg"  />
+                                <img data-u="image" src="img/anime/animeslideshow4.jpg"  />
                             </div>
                         </div>
                         <!-- Bullet Navigator -->
@@ -332,17 +332,21 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-8"><br />
-                        <img class="img-responsive img-rounded" src="img/net/netSoc.jpg" alt="">
+                        <img class="img-responsive img-rounded" src="img/anime/animeSoc.jpg" alt="">
                     </div>
                     <div class="col-md-4">
                         <hr>
-                        <h1>NCI NET Society</h1>
+                        <h1> Anime and Manga Society</h1>
                         <hr>
-                        <p>Welcome to the NCI Gaming Soc page! Our aim to provide students of NCI a competive and fun gaming experience in the college. We will play a variety of games from console gaming platforms such as playstation, Xbox and PC and even retro consoles! 
-
-                            Any suggestions or ideas please feel free to post it on our group page. Your feedback is important as it's your society!
+                        <p>
+                    
+                            Welcome to NCI Anime and Manga Society! 
+                    
+                            If you guys have questions, requests or any smashing suggestions feel free to post it on here.
+                        
+                            You can also post any Anime or Manga that you think are awesome and that everyone should know about!
                             
-                            If you post any form of spam on this page I will unleash my angry ban hammer and it upsets our team greatly. </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -352,16 +356,22 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
-                    </div>
-                    <div class="col-md-4">
-                        <img border="0" src="img/net/david.jpg" height="350"></img>
+                        <img border="0" src="img/anime/Pau.jpg" height="350"></img>
                         <br /><br />
                         <hr>
-                        <p><strong>Vice President:</strong>David Kelly</p>
-                         <p><strong>Email:</strong> Davidkelly@gmail.com</p>
+                        <p><strong>Co-President:</strong> Pau-Pau Anicete </p>
+                         <p><strong>Email:</strong> Pau.anicete@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4">
+                        <img border="0" src="img/anime/Renalyn.jpg" height="350"></img>
+                        <br /><br />
+                        <hr>
+                        <p><strong>Creator of Fanpage: </strong>Renalyn Aganon</p>
+                        <p><strong>Email:</strong> Renalyn@gmail.com</p>
+                        <hr>
                     </div>
                 </div>
             </div>
@@ -372,10 +382,10 @@
                 <div class="col-lf-12">
                     <div id="page">
                         <div class="border rounded">
-                            <shoutboxheading> NCI NET Society Shoutbox</shoutboxheading>
+                            <shoutboxheading>Anime and Manga Society Shoutbox</shoutboxheading>
                         </div>
                         <div class="border_main rounded">
-                                <form method="post" action="shoutboxnet.php" id="shoutboxform">
+                                <form method="post" action="shoutboxanime.php" id="shoutboxform">
                                     <shoutboxlabels>Name: </shoutboxlabels><input type="text" id="name" name="name" disabled value="<?php echo $userRow['userName']; ?>"/>
                                     <shoutboxlabels>&nbsp Message: </shoutboxlabels><input type="text" id="message" name="message" class="message" /><input type="submit" id="submit" value="Shout" />
                                 </form><br/>
@@ -404,7 +414,7 @@
                 // ajax call
                 $.ajax({
                     type: "POST",
-                    url: "shoutboxnet.php",
+                    url: "shoutboxanime.php",
                     data: data,
                     success: function(html){ // this happen after we get result
                         $("#shout").slideToggle(0, function(){
@@ -422,7 +432,7 @@
             
             $.ajax({
                     type: "POST",
-                    url: "shoutboxnet.php",
+                    url: "shoutboxanime.php",
                     data: data,
                     success: function(html){ // this happen after we get result
                         $("#shout").html(html);
@@ -443,16 +453,16 @@
                         <strong>Sign Up</strong>
                     </h2>
                     <hr>
-                    <p><h6><center> Please fill in the form if you want to sign up for NCINET Society</center></h6></p>
+                    <p><h6><center> Please fill in the form if you want to sign up for Anime and Manga Society</center></h6></p>
                     <br />
-                <form name="myform" method="post" action="netSoc.php" onSubmit="alert('Thank you for your application!!!!');">
+                <form name="myform" method="post" action="Anime.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="John Smith" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name"  value="<?php echo $userRow['userName']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="abc@example.com"  value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" value="<?php echo $userRow['userEmail']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
@@ -460,7 +470,7 @@
                     </div>
                     <div class="form-group">
                         <label for="society">Society</label>
-                        <input type="text" class="form-control" name="society"  placeholder="NETSOC" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="society"  placeholder="Anime" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
@@ -485,7 +495,8 @@
     })
     </script>
 	
-	 <footer>
+	
+    <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 text-left">

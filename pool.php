@@ -245,14 +245,18 @@
 			          <a class="dropdown-toggle" data-toggle="dropdown" href="pool">Pool
 			          <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
-			          	<br>
-			            <li><a href="clubsoc.php">Club&soc</a></li>
-			            <hr>
+			            <br>
 			            <li><a href="basketball.php">Basketball</a></li>
+			            <hr>
+			            <li><a href="pool.php">Pool</a></li>
 			            <hr>
 			            <li><a href="gaming.php">Gaming</a></li>
 			            <hr>
 			            <li><a href="music.php">Music</a></li>
+			            <hr>
+			            <li><a href="netSoc.php">NCI NETSOC</a></li>
+			            <hr>
+			            <li><a href="Anime.php">Anime and Manga</a></li>
 			            <br>
 			          </ul>
 			        </li>
@@ -452,11 +456,11 @@
                 <form name="myform" method="post" action="pool.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="John Smith" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name"  value="<?php echo $userRow['userName']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="abc@example.com"  value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" value="<?php echo $userRow['userEmail']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
@@ -464,7 +468,7 @@
                     </div>
                     <div class="form-group">
                         <label for="society">Society</label>
-                        <input type="text" class="form-control" name="society"  placeholder="Pool" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="society"  placeholder="BasketBall" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
@@ -472,6 +476,7 @@
                         
                         <small id="emailHelp" class="form-text text-muted">We'll never share your information with anyone else.</small>
                     </div>
+                    
                         <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
                 </form>
            </div>
@@ -492,18 +497,27 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-4 text-left">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-    					<a href="https://www.facebook.com/NCI-Pool-Snooker-Club-167704356588833/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
-    					<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-    					<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
-    					<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					</div>
+                 </div>
+                     <div class="add">
+                        <div class="col-lg-4 text-center">
+            				<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+            				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+            				<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+            				<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					    </div>
                 </div>
-            </div>
+			  <div class="col-lg-4 text-right">
+                    <p id="demo"></p>
+                    <script>
+                          var d = new Date();
+                          document.getElementById("demo").innerHTML = d.toString();
+                    </script>
+    		   </div>
+		    </div>
         </div>
-    </footer>
+</footer>
     
 </body>
 </html>

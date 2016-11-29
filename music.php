@@ -242,13 +242,17 @@
 			          <span class="caret"></span></a>
 			          <ul class="dropdown-menu">
 			          	<br>
-			            <li><a href="clubsoc.php">Club&soc</a></li>
+			            <li><a href="basketball.php">Basketball</a></li>
 			            <hr>
 			            <li><a href="pool.php">Pool</a></li>
 			            <hr>
 			            <li><a href="gaming.php">Gaming</a></li>
 			            <hr>
-			            <li><a href="basketball.php">Basketball</a></li>
+			            <li><a href="music.php">Music</a></li>
+			            <hr>
+			            <li><a href="netSoc.php">NCI NETSOC</a></li>
+			            <hr>
+			            <li><a href="Anime.php">Anime and Manga</a></li>
 			            <br>
 			          </ul>
 			        </li>
@@ -354,28 +358,17 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep3.jpg" height="350"></img>
+                       
+                    </div>
+                    <div class="col-md-4">
+                        <img border="0" src="img/music/eve.jpg" height="350"></img>
                         <br /><br />
                         <hr>
-                        <p><strong>Co-President:</strong> Josephine Andrews</p>
-                        <p><strong>Email:</strong> Josephine_Andrews@gmail.com</p>
+                        <p><strong>Co- President:</strong> Eve O'Conner</p>
+                         <p><strong>Email:</strong> eveocnr@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep2.jpg" height="350"></img>
-                        <br /><br />
-                        <hr>
-                        <p><strong>Vice President:</strong> Cillian John Murray</p>
-                         <p><strong>Email:</strong> Cillian.murray@gmail.com</p>
-                        <hr>
-                    </div>
-                    <div class="col-md-4">
-                        <img border="0" src="clubsandsocsreps/gaming/gamingrep1.jpg" height="350"></img>
-                        <br /><br />
-                        <hr>
-                        <p><strong>Creator of Fanpage: </strong>Ben Kibabu</p>
-                         <p><strong>Email:</strong> Benkibabu@gmail.com</p>
-                        <hr>
                     </div>
                 </div>
             </div>
@@ -461,11 +454,11 @@
                 <form name="myform" method="post" action="music.php" onSubmit="alert('Thank you for your application!!!!');">
                     <div class="form-group">
                         <label for="Name" align="left">Name</label>
-                        <input type="text" class="form-control" name="name" placeholder="John Smith" value="<?php if(isset($_POST['name']) && empty($nameErr)){ echo $_POST['name'];} else {echo '';}?>" required><span class="error"><?php echo $nameErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="name"  value="<?php echo $userRow['userName']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Email">Email</label>
-                        <input type="text" class="form-control" name="email" placeholder="abc@example.com"  value="<?php if(isset($_POST['email']) && empty($emailErr)){ echo $_POST['email'];} else {echo '';}?>" required><span class="error"><?php echo $emailErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="email" value="<?php echo $userRow['userEmail']; ?>" <span ><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="phone">Phone Number</label>
@@ -473,7 +466,7 @@
                     </div>
                     <div class="form-group">
                         <label for="society">Society</label>
-                        <input type="text" class="form-control" name="society"  placeholder="Music" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
+                        <input type="text" class="form-control" name="society"  placeholder="BasketBall" disabled value="<?php if(isset($_POST['socity']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                     </div>
                     <div class="form-group">
                         <label for="Date">Date of Birth</label>
@@ -505,21 +498,30 @@
     </script>
 	
 	
-   <footer>
+    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="add">
-						<a href="https://www.facebook.com/NciMusicSoc/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
-						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
-						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					 </div>
+                <div class="col-lg-4 text-left">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
+                 </div>
+                     <div class="add">
+                        <div class="col-lg-4 text-center">
+            				<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+            				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+            				<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+            				<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					    </div>
                 </div>
-            </div>
+			  <div class="col-lg-4 text-right">
+                    <p id="demo"></p>
+                    <script>
+                          var d = new Date();
+                          document.getElementById("demo").innerHTML = d.toString();
+                    </script>
+    		   </div>
+		    </div>
         </div>
-    </footer>
+</footer>
     
 </body>
 
