@@ -237,9 +237,9 @@
 			<div class="elements" id="one3">
 				<ul>
 					 </br>
-					 	<li><strong>Co-President:</strong> </li></br>
-						<li><strong>Vice President:</strong> </li></br>
-						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
+					 	<li><strong>Co-President: Pau-Pau Anicete</strong> </li></br>
+						<li><strong>Vice President: </strong> </li></br>
+						<li><strong>Creator of FB-Fanpage: Renalyn Aganon</strong> </li></br>
 					</ul>
 			</div>
 
@@ -284,7 +284,7 @@
 				<div class="elements" id="one4">
 					<ul>
 					 </br>
-					 	<li><strong>President:</strong> </li></br>
+					 	<li><strong>President: Eve O'Conner </strong> </li></br>
 						<li><strong>Vice President:</strong> </li></br>
 						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
 					</ul>
@@ -335,7 +335,7 @@
 			<!-- Societies and Clubs list 6 -->
 				<div id="img">
 		    		<div class="hovereffect">
-		    			<img class="img-responsive" src="img/net/netSocs.jpg" alt="Society or Club" border="5">
+		    			<img class="img-responsive" src="img/clubsoc/Net.jpg" alt="Society or Club" border="5">
 		    			<div class="overlay">
 		         			<h2>NCI NET Society</h2>
 		        			<a class="info" href="netSoc.php">Find out More</a>

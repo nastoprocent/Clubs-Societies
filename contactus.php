@@ -134,7 +134,7 @@
                 </div>
                     <div class="col-md-4"><br><br><br><br><br><br>
                         <p align=left>Phone:
-                            <strong>123.456.7890</strong>
+                            <strong>  (01) 449 8500</strong>
                         </p>
                         <p align=lefts>Email:
                             <strong><a href="mailto:name@example.com">ClubsAndSocietiesNCI@gmail.com</a></strong>

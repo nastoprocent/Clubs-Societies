@@ -57,7 +57,7 @@ function getCalender($year = '',$month = '')
 						$currentDate = $dateYear.'-'.$dateMonth.'-'.$dayCount;
 						$eventNum = 0;
 						//Include db configuration file
-						include 'dbConfig.php';
+						include 'dbconnect.php';
 						//Get number of events based on the current date
 						$result = $db->query("SELECT title FROM events WHERE date = '".$currentDate."' AND status = 1");
 						$eventNum = $result->num_rows;
@@ -182,7 +182,7 @@ function getYearList($selected = ''){
  */
 function getEvents($date = ''){
 	//Include db configuration file
-	include 'dbConfig.php';
+	include 'dbconnect.php';
 	$eventListHTML = '';
 	$date = $date?$date:date("Y-m-d");
 	//Get events based on the current date

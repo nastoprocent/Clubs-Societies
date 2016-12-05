@@ -412,6 +412,7 @@
                 var message = $("#message").val();
                 // forming the queryString
                 var data = 'name='+ name +'&message='+ message;
+                
         
                 // ajax call
                 $.ajax({
