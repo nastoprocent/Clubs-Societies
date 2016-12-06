@@ -351,7 +351,7 @@
                 <div class="box">
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/poolrep1.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep3.jpg" height="350"></img>
                         <br /><br />
                         <hr>
                         <p><strong>President:</strong> Cillian John Murray</p>
@@ -367,10 +367,10 @@
                     </div>
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/poolrep3.jpg" height="350"></img>
+                        <img border="0" src="clubsandsocsreps/pool/poolrep1.jpg" height="350"></img>
                         <br /><br />
                         <hr>
-                        <p><strong>Creator of Fanpage: </strong>Cillian John Murray</p>
+                        <p><strong>Creator of Fanpage: </strong>Ben Kibau</p>
                         <hr>
                     </div>
                 </div>

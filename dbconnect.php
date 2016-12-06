@@ -9,6 +9,7 @@
 	$dbPassword = '';
 	$dbName = 'phpmyadmin';
 	
+	
 	$conn = mysql_connect($dbHost, $dbUsername, $dbPassword, $dbName);
 	$dbcon = mysql_select_db($dbName);
 	

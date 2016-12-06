@@ -357,9 +357,9 @@
 				</div>
 				<div class="elements" id="one6">
 					<ul>
-					 </br><li><strong>Co-President:</strong> Cillian John Murray</li></br>
-						<li><strong>Vice President:</strong> Jim Maguire</li></br>
-						<li><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</li></br>
+					 </br><li><strong>Co-President:</strong> David Kelly</li></br>
+						<li><strong>Vice President:</strong></li></br>
+						<li><strong>Creator of FB-Fanpage: </strong></li></br>
 					</ul>
 				</div>
 		</div>
