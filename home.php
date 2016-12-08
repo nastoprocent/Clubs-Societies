@@ -43,7 +43,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <a class="navbar-brand">Clubs & Socs</a>
+          <a class="navbar-brand">Clubs & Socs</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -86,7 +86,7 @@
                           while($row = $result->fetch_assoc()) {
                               
                               /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
-                              echo "<br><div class='design'><div class='id'>Event number: " . $row["id"]. "</div><br><div class='comment'>" . $row["title"]. "<br><br>Date the event is on: " .$row["date"] ."</div><br></div><br>";
+                              echo "<br><div class='design'><div class='id'>News Feed: " . $row["id"]. "</div><br><div class='comment'>" . $row["title"]. "<br><br>Date the event is on: " .$row["date"] ."</div><br></div><br>";
                               
                           }
                       } else {
@@ -129,7 +129,7 @@
                           while($row = $result->fetch_assoc()) {
                               
                               /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
-                              echo "<br><div class='design'><div class='id'>Event number: " . $row["id"]. "</div><br><div class='comment'>" . $row["title"]. "<br><br>Date the event is on: " .$row["date"] ."</div><br></div><br>";
+                              echo "<br><div class='design'><div class='id'>News Feed: " . $row["id"]. "</div><br><div class='comment'>" . $row["title"]. "<br><br>Date the event is on: " .$row["date"] ."</div><br></div><br>";
                               
                           }
                       } else {

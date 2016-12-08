@@ -346,28 +346,19 @@
             <div class="row">
                 <div class="box">
                     <div class="col-md-4">
-                        <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/poolrep1.jpg" height="350"></img>
-                        <br /><br />
-                        <hr>
-                        <p><strong>President:</strong> ABC</p>
-                        <hr>
+                       
                     </div>
                     <div class="col-md-4">
                         <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/poolrep2.jpg" height="350"></img>
+                        <img border="0" src="img/basketball/Rep1.jpg" height="350"></img>
                         <br /><br />
                         <hr>
-                        <p><strong>Vice President:</strong> JKL</p>
+                        <p><strong>President:</strong>  Gary Barron</p>
+                        <p><strong>Email:</strong>ncibasketballclub@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
-                        <names></names><br /><br />
-                        <img border="0" src="clubsandsocsreps/pool/poolrep3.jpg" height="350"></img>
-                        <br /><br />
-                        <hr>
-                        <p><strong>Creator of FB-Fanpage: </strong>XYZ</p>
-                        <hr>
+                       
                     </div>
                 </div>
             </div>

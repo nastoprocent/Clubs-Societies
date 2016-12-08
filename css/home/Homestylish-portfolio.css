@@ -10,7 +10,7 @@ html,
     background: url(../../img/home/home.png) no-repeat center;
     height:100%;
     width:100%;
-	background-size: 100% 100%;
+	background-size: 100%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -133,4 +133,9 @@ hr.small {
     font-size:25px;
     padding:15px;
     border-radius:5px;
+}
+.navbar-brand {
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 2px;
 }

@@ -12,6 +12,7 @@
 	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -146,7 +147,32 @@
                 <div class="clearfix"></div>
             </div>
         </div>
-
+        
+        <?php
+            
+              if (isset($_POST['submit']))  {
+              
+              //Email information
+              $to = "someone@example.com";
+              $subject="Messgae from $name,$phone.";
+              
+              $name = $_POST['name'];
+              $email = $_POST['email'];
+              $phone = $_POST['phone'];
+              $comment = $_POST['comment'];
+              
+              //send email
+              mail($to, "$subject", $comment, "From:" . $email);
+              
+              
+              echo "Thank you for contacting us!";
+              $page= "admin.php";
+                header("Location: $page");
+              }
+              
+              //if variable is not filled out, display the form
+              else  {
+            ?>
 
         <div class="row">
             <div class="box">
@@ -174,7 +200,7 @@
                                 <div class="clearfix"></div>
                                 <div class="form-group col-lg-12">
                                     <label>Please describe the problem or question that you have.</label>
-                                    <textarea class="form-control" name="message" rows="6" onclick="select_area()"></textarea>
+                                    <textarea class="form-control" name="comment" rows="6" onclick="select_area()"></textarea>
                                 </div>
                                 <div class="form-group col-lg-12">
                                     <input type="hidden" name="save" value="button">
@@ -188,6 +214,9 @@
         </div>
 
     </div>           
+    <?php
+    }
+    ?>
     <!-- /.container -->
 
    <footer>
