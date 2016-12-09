@@ -7,7 +7,7 @@
 	$dbHost = 'localhost';
 	$dbUsername = 'root';
 	$dbPassword = '';
-	$dbName = 'phpmyadmin';
+	$dbName = 'clubsandsocs';
 	
 	
 	$conn = mysql_connect($dbHost, $dbUsername, $dbPassword, $dbName);

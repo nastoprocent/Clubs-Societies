@@ -394,28 +394,20 @@
                  </div>
                      <div class="add">
                         <div class="col-lg-4 text-center">
-            						<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
-            						<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-            						<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
-            						<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
-					           </div>
-                </div>
-                
-			    	    <div class="col-lg-4 text-right">
-				          
-                      
-                          <p id="demo"></p>
-                          <script>
-                          var d = new Date();
-                          document.getElementById("demo").innerHTML = d.toString();
-                          </script>
-    				        </div>
-    			       
-				        </div>
-				        
-				        
-				        
-           
+            				<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+            				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+            				<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+            				<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					    </div>
+                	</div>
+			    <div class="col-lg-4 text-right">
+	                 <p id="demo"></p>
+	                 <script>
+	                 var d = new Date();
+	                 document.getElementById("demo").innerHTML = d.toString();
+	                 </script>
+    			</div>
+			</div>
         </div>
 	</footer>
 

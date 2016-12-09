@@ -1,0 +1,16 @@
+To access the project you need a database. (We stopped using phpmyadmin due to change of plans regarding putting website live.)
+Go into bash(terminal) on cloud 9 and type in "mysql-ctl cli"
+Find the file "clubsandsocs.sql" in the project.
+Open the file, copy everythnig that is in the file.
+Paste it into the bash after typing in "mysql-ctl cli"
+Database should work right now, try to login.
+
+Login details:
+Name: Dawid
+Email: x14321651@student.ncirl.ie
+Password: testing
+
+To create new account, you need exact student email with x and 8 numbers
+The account will be created with out the email validation(sending out an confirm email to inbox)
+Because the website has to be live so that emails can be send out. Which means
+that you can create any account right now if u have student email x........@student.ncirl.ie

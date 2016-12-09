@@ -15,7 +15,7 @@
 <?php
 
     mysql_connect("localhost", "root", "") or die ("Could not connect");
-    mysql_select_db("phpmyadmin") or die("Could not find database");
+    mysql_select_db("clubsandsocs") or die("Could not find database");
     $output = '';
     
     if(isset($_POST['search'])){
@@ -173,18 +173,29 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+              
+              
+                <div class="col-lg-4 text-left">
                     <p>Copyright &copy; Bdoor & David & Jason & Sumit  2016</p>
-                    <div class="add">
-				<a href="https://www.facebook.com"><img src="img//facebook.jpg" alt="" /></a>
-				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
-				<a href="https://twitter.com/"><img src="img//twitter.jpg" alt="" /></a>
-				<a href="https://www.youtube.com/"><img src="img//youtube.jpg" alt="" /></a>
+                 </div>
+                     <div class="add">
+                        <div class="col-lg-4 text-center">
+            				<a href="https://www.facebook.com/clubsandsocs/?fref=ts"><img src="img//facebook.jpg" alt="" /></a>
+            				<a href="https://accounts.google.com"><img src="img//google.jpg" alt="" /></a>
+            				<a href="https://twitter.com/NCIRL"><img src="img//twitter.jpg" alt="" /></a>
+            				<a href="https://www.youtube.com/user/NCIRL"><img src="img//youtube.jpg" alt="" /></a>
+					    </div>
+                	</div>
+			    <div class="col-lg-4 text-right">
+	                 <p id="demo"></p>
+	                 <script>
+	                 var d = new Date();
+	                 document.getElementById("demo").innerHTML = d.toString();
+	                 </script>
+    			</div>
 			</div>
-                </div>
-            </div>
         </div>
-    </footer>
+	</footer>
 
         <!-- jQuery -->
         <script src="js/jquery.js"></script>
