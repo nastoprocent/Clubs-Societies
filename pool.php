@@ -355,6 +355,8 @@
                         <br /><br />
                         <hr>
                         <p><strong>President:</strong> Cillian John Murray</p>
+                        
+                        <p><strong>Email:</strong>cillianmurray@gmail.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
@@ -363,6 +365,8 @@
                         <br /><br />
                         <hr>
                         <p><strong>Vice President:</strong> Jim Maguire</p>
+                        
+                        <p><strong>Email:</strong>maguirejim@yahoo.com</p>
                         <hr>
                     </div>
                     <div class="col-md-4">
@@ -371,6 +375,8 @@
                         <br /><br />
                         <hr>
                         <p><strong>Creator of Fanpage: </strong>Ben Kibau</p>
+                        
+                        <p><strong>Email:</strong>bennybenk@outlook.com</p>
                         <hr>
                     </div>
                 </div>

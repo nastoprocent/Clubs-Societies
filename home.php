@@ -68,41 +68,16 @@
 
       <div class="header">
         <div class="row">
-          <div class="col-sm-4 col-lg-4 col-md-4">
-      		  <br>
-      		     <div class="homebox" align="center" >
-                <?php
-             	    $conn = new mysqli("localhost", "root", "", "phpmyadmin");
-                  // Check connection
-                  if ($conn->connect_error) {
-                       die("Connection failed: " . $conn->connect_error);
-                  } 
-             	 
-                      $text = "SELECT `id`, `title`, `date` FROM events limit 3";
-                      $result = $conn->query($text);
-                      
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              
-                              /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
-                              echo "<br><div class='design'><div class='id'>News Feed: " . $row["id"]. "</div><br><div class='comment'>" . $row["title"]. "<br><br>Date the event is on: " .$row["date"] ."</div><br></div><br>";
-                              
-                          }
-                      } else {
-                          echo "0 results";
-                      }
-                      $conn->close();
-                ?>
-              </div>
-          </div>
+         
           
-            <div class="col-sm-4 col-lg-4 col-md-4"> 
+            <div class="col-sm-12"> 
                   <br />
+                   <center>
                   <div class="fontdesign">
                     <h1>Welcome to NCI</h1>
                     <h3>Clubs and Societies website</h3>
                   </div>
+                   </center>
                    <br />
                    <br />
                    <center>
@@ -111,35 +86,7 @@
                  
             </div>
             
-             <div class="col-sm-4 col-lg-4 col-md-4">
-      		  <br>
-      		     <div class="homebox" align="center" >
-                <?php
-             	    $conn = new mysqli("localhost", "root", "", "phpmyadmin");
-                  // Check connection
-                  if ($conn->connect_error) {
-                       die("Connection failed: " . $conn->connect_error);
-                  } 
-             	 
-                      $text = "SELECT `id`, `title`, `date` FROM events WHERE id IN(4,5,6) limit 3";
-                      $result = $conn->query($text);
-                      
-                      if ($result->num_rows > 0) {
-                          // output data of each row
-                          while($row = $result->fetch_assoc()) {
-                              
-                              /*echo "Posted on: " . date("Y/m/d") . "<br>";*/
-                              echo "<br><div class='design'><div class='id'>News Feed: " . $row["id"]. "</div><br><div class='comment'>" . $row["title"]. "<br><br>Date the event is on: " .$row["date"] ."</div><br></div><br>";
-                              
-                          }
-                      } else {
-                          echo "0 results";
-                      }
-                      $conn->close();
-                ?>
-              </div>
-          </div>
-              
+
           </div>
         </div> 
      

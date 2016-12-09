@@ -12,6 +12,99 @@
 	$res=mysql_query("SELECT * FROM users WHERE userId=".$_SESSION['user']);
 	$userRow=mysql_fetch_array($res);
 ?>
+<?php 
+		
+			$servername="localhost";
+			$username="root";
+			$password="";
+			$conn = new mysqli($servername, $username, $password, 'phpmyadmin');
+			if ($conn->connect_error)
+			{
+				die("Connection failed: " . $conn->connect_error);
+			}
+			
+			
+        $nameErr = $dateofbirthErr = $emailErr = $phoneErr = "";
+        $name = $dateofbirth = $email = $phone = $questions = "";
+        function test_data($data)
+        {
+            $data=trim($data);
+            $data=stripslashes($data);
+            $data=htmlspecialchars($data);
+            return $data;
+        }
+        $errors = array();
+        $valid=0; 
+        if ( $_SERVER["REQUEST_METHOD"] =="POST" )
+        {
+            $name=$_POST["name"];
+            if( empty($name) )
+            {
+                $nameErr = "Please Enter your Name";
+                $errors[]= $nameErr ;
+            }
+            else
+            {
+                if( !preg_match("/^[a-zA-Z ]*$/",$name) )
+                {
+                    $nameErr = "Wrong characters in the Name";
+                    $errors[]= $nameErr ;
+                }
+                else
+                {
+                    $name=test_data($name);
+                    $valid++;
+                }
+            }
+            
+            $email=$_POST["email"];
+            if( empty($email) )
+            {
+                $emailErr = "Please Enter Email Address";
+                $errors[]= $emailErr ;
+            }
+            else
+            {
+                if( !filter_var($email, FILTER_VALIDATE_EMAIL) )
+                {
+                    $emailErr = "Invalid Email Address";
+                    $errors[]= $emailErr ;
+                }
+                else
+                {
+                    $email=test_data($email);
+                    $valid++;
+                }   
+            }       
+            $phone=$_POST["phone"];
+            if( empty($phone) )
+            {
+                $phoneErr = "Please Enter Phone Number";
+                $errors[]= $phoneErr ;
+            }
+            else
+            { 
+                if( !preg_match("/^[0-9]*$/",$phone ) )
+                {
+                    $phoneErr = "Invalid Phone number";
+                    $errors[]= $phoneErr ;
+                }
+                else
+                {
+                    $phone=test_data($phone);
+                    $valid++;
+                }   
+            }
+            
+            $comment=$_POST["comment"];
+            
+    }
+    if($valid==3)
+    {
+    $conn->query("INSERT INTO contact (name, email, phone ,comment) VALUES ( '".$_POST['name']."', '".$_POST['email']."', '".$_POST['phone']."','".$_POST['comment']."')");
+    $conn->close();
+    }
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -148,7 +241,7 @@
             </div>
         </div>
         
-        <?php
+        /* <?php
             
               if (isset($_POST['submit']))  {
               
@@ -172,7 +265,8 @@
               
               //if variable is not filled out, display the form
               else  {
-            ?>
+        ?> 
+        */
 
         <div class="row">
             <div class="box">
@@ -183,40 +277,35 @@
                     </h2>
                     <hr>
                     <p><h6><center> Please contact us if you have any further questions or problems about our site. We will gladly get back to you.</center></h6></p>
-                        <form method = "post" name="form1">
-                            <div class="row">
-                                <div class="form-group col-lg-4">
-                                    <label>Name</label>
-                                    <input type="text" name="name" class="form-control" disabled value="<?php echo $userRow['userName']; ?>">
+                        <form name="contactform" method="post" action="contactus.php" onSubmit="alert('Thank you for your application!!!!');">
+                                <div class="form-group">
+                                    <label for="Name" align="left">Name</label>
+                                    <input type="text" class="form-control" name="name"  value="<?php echo $userRow['userName']; ?>" <span ><?php $_POST = array() ?></span>
                                 </div>
-                                <div class="form-group col-lg-4">
-                                    <label>Email Address</label>
-                                    <input type="email" name="email" class="form-control" disabled value="<?php echo $userRow['userEmail']; ?>">
+                                <div class="form-group">
+                                    <label for="Email">Email</label>
+                                    <input type="text" class="form-control" name="email" value="<?php echo $userRow['userEmail']; ?>" <span ><?php $_POST = array() ?></span>
                                 </div>
-                                <div class="form-group col-lg-4">
-                                    <label>Phone Number</label>
-                                    <input type="tel" name="phone" class="form-control">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="text" class="form-control" name="phone" placeholder="08********"  value="<?php if(isset($_POST['phone']) && empty($phoneErr)){ echo $_POST['phone'];} else {echo '';}?>" required maxlength="12" minlength="10"><span class="error"><?php echo $phoneErr; ?><?php $_POST = array() ?></span>
                                 </div>
-                                <div class="clearfix"></div>
                                 <div class="form-group col-lg-12">
                                     <label>Please describe the problem or question that you have.</label>
                                     <textarea class="form-control" name="comment" rows="6" onclick="select_area()"></textarea>
                                 </div>
-                                <div class="form-group col-lg-12">
-                                    <input type="hidden" name="save" value="button">
-                                    <button type="button" class="btn btn-default" onclick="validate_message();" value="Submit">Submit</button>
-                                </div>
-                            </div>
-                        </form>
+                    
+                        <button type="submit" class="btn btn-primary" onclick="check_val()"; >Submit</button>
+                </form>
                 </div>
             </div>
         </div>
         </div>
 
     </div>           
-    <?php
+    /*<?php
     }
-    ?>
+    ?>*/
     <!-- /.container -->
 
    <footer>

@@ -168,9 +168,7 @@
 			<div class="elements" id="one">
 				<ul>
 					 </br>
-					 	<li><strong>Co-President:</strong> </li></br>
-						<li><strong>Vice President:</strong> </li></br>
-						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
+					 	<li><strong>President: </strong>Gary Barron</li></br>
 					</ul>
 			</div>
 
@@ -209,9 +207,9 @@
 				<div class="elements" id="one2">
 					<ul>
 					 </br>
-					 	<li><strong>President: Cillian John Murray</strong> </li></br>
-						<li><strong>Vice President: Jim Maguire</strong> </li></br>
-						<li><strong>Creator of FB-Fanpage: Cillian John Murray</strong> </li></br>
+						<li><strong>Vice President: </strong>Jim Maguire</li></br>
+						<li><strong>Co-President:</strong> Cillian John Murray</li></br>
+						<li><strong>Creator of FB-Fanpage: </strong>Ben Kibabu</li></br>
 					</ul>
 				</div>
 		</div>
@@ -240,15 +238,14 @@
 					<a href="#name" onclick="collapse('one3');return false">▲</a>
 				</div>
 				<h3 class="name">
-				<a href="basketball.php" target="_blank">Anime and Manga</a>
+				<a href="Anime.php" target="_blank">Anime and Manga</a>
 				</h3>
 			</div>
 			<div class="elements" id="one3">
 				<ul>
 					 </br>
-					 	<li><strong>Co-President: Pau-Pau Anicete</strong> </li></br>
-						<li><strong>Vice President: </strong> </li></br>
-						<li><strong>Creator of FB-Fanpage: Renalyn Aganon</strong> </li></br>
+					 	<li><strong>Co-President: </strong>Pau-Pau Anicete </li></br>
+						<li><strong>Creator of FB-Fanpage: </strong>Renalyn Aganon </li></br>
 					</ul>
 			</div>
 
@@ -293,9 +290,7 @@
 				<div class="elements" id="one4">
 					<ul>
 					 </br>
-					 	<li><strong>President: Eve O'Conner </strong> </li></br>
-						<li><strong>Vice President:</strong> </li></br>
-						<li><strong>Creator of FB-Fanpage: </strong> </li></br>
+					 	<li><strong>President: </strong>Eve O'Conner</li></br>
 					</ul>
 				</div>
 		</div>
@@ -367,8 +362,6 @@
 				<div class="elements" id="one6">
 					<ul>
 					 </br><li><strong>Co-President:</strong> David Kelly</li></br>
-						<li><strong>Vice President:</strong></li></br>
-						<li><strong>Creator of FB-Fanpage: </strong></li></br>
 					</ul>
 				</div>
 		</div>
